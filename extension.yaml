@@ -1,0 +1,677 @@
+{
+  "manifest_version": 2,
+  "extension_id": "flowsteward.quickbooks",
+  "kind": "tool_provider",
+  "version": "1.0.0",
+  "display_name": "QuickBooks Online",
+  "description": "Native Python QuickBooks Online accounting integration: all tools from the pinned official MCP server, reports and document artifacts.",
+  "lifecycle": {
+    "data_schema_version": 1,
+    "data_migrations": []
+  },
+  "vendor": {
+    "name": "Flow Steward"
+  },
+  "listing": {
+    "category": "finance",
+    "tags": [
+      "quickbooks",
+      "accounting",
+      "intuit"
+    ],
+    "summary": "QuickBooks Online entities, financial reports and attachments."
+  },
+  "features": [
+    "tool",
+    "action"
+  ],
+  "required_scopes": [
+    "extension:invoke",
+    "artifact:read",
+    "artifact:write"
+  ],
+  "machine_auth": {
+    "service_account_key": "svc_ext_quickbooks",
+    "required_scopes": [
+      "extension:invoke",
+      "artifact:read",
+      "artifact:write"
+    ]
+  },
+  "egress": {
+    "hosts": [
+      "quickbooks.api.intuit.com",
+      "sandbox-quickbooks.api.intuit.com",
+      "appcenter.intuit.com",
+      "oauth.platform.intuit.com",
+      "developer.api.intuit.com"
+    ]
+  },
+  "account_scope": {
+    "scope_type": "project",
+    "description": "Each connection grants access to one company in one project."
+  },
+  "entrypoint": {
+    "mode": "subprocess",
+    "command": [
+      "python3",
+      "main.py"
+    ],
+    "timeout_seconds": 90
+  },
+  "health": {
+    "command": [
+      "python3",
+      "health.py"
+    ],
+    "timeout_seconds": 5
+  },
+  "ui_manifest": "ui/ui_manifest.yaml",
+  "action_manifest": "ui/actions/actions.yaml",
+  "python_requirements": [],
+  "runtime": {
+    "contract_version": "extension_host_v2",
+    "extension_contract_v2": {
+      "oauth_providers": [
+        {
+          "provider_id": "intuit_oauth",
+          "description": "Authorize one QuickBooks Online company using project-owned Intuit application credentials.",
+          "display_name": "Intuit QuickBooks Online",
+          "setup_page_id": "setup-guide",
+          "help_page_id": "setup-guide",
+          "flow": {
+            "type": "authorization_code",
+            "pkce": "none"
+          },
+          "credential_fields": [
+            {
+              "field_id": "client_id",
+              "value_type": "text",
+              "required": true,
+              "secret": false,
+              "change_policy": "reauthorization_required",
+              "label": "Intuit Client ID",
+              "help_text": "Client ID from the Intuit app for the selected sandbox or production environment.",
+              "validation": {
+                "min_length": 1,
+                "max_length": 512
+              }
+            },
+            {
+              "field_id": "client_secret",
+              "value_type": "secret",
+              "required": true,
+              "secret": true,
+              "change_policy": "reauthorization_required",
+              "label": "Intuit Client Secret",
+              "help_text": "Matching Intuit app client secret; stored and used only by the platform.",
+              "validation": {
+                "min_length": 1,
+                "max_length": 4096
+              }
+            }
+          ],
+          "authorization_endpoint": {
+            "url": "https://appcenter.intuit.com/connect/oauth2"
+          },
+          "token_endpoint": {
+            "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+            "client_auth_method": "client_secret_basic"
+          },
+          "revocation_endpoint": {
+            "url": "https://developer.api.intuit.com/v2/oauth2/tokens/revoke"
+          },
+          "callback_id": "oauth_authorization",
+          "authorization_intents": [
+            {
+              "intent_id": "company_connect",
+              "static_parameters": {}
+            }
+          ],
+          "post_connect_action_id": "verify_company"
+        }
+      ],
+      "connection_types": "contracts/connection_types.yaml",
+      "operation_manifest": "contracts/operation_manifest.yaml",
+      "step_ui_manifest": "contracts/step_ui_manifest.yaml"
+    }
+  },
+  "callbacks": [
+    {
+      "callback_id": "oauth_authorization",
+      "purpose": "oauth_authorization",
+      "methods": [
+        "GET"
+      ],
+      "connection_scoped": false
+    }
+  ],
+  "external_effects": [
+    {
+      "operation_id": "create_account",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_attachable",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_bill",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_bill_payment",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_class",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_credit_memo",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_customer",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_department",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_deposit",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_employee",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_estimate",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_invoice",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_item",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_journal_entry",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_payment",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_payment_method",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_purchase",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_purchase_order",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_refund_receipt",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_sales_receipt",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_term",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_time_activity",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_transfer",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_vendor",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "create_vendor_credit",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "delete_attachable",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "delete_bill",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "delete_bill_payment",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "delete_credit_memo",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "delete_customer",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "delete_deposit",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "delete_employee",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "delete_estimate",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "delete_invoice",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "delete_item",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "delete_journal_entry",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "delete_payment",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "delete_purchase",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "delete_purchase_order",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "delete_refund_receipt",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "delete_sales_receipt",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "delete_time_activity",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "delete_transfer",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "delete_vendor",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "delete_vendor_credit",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_account",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_attachable",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_bill",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_bill_payment",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_class",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_company_info",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_credit_memo",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_customer",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_department",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_deposit",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_employee",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_estimate",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_invoice",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_item",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_journal_entry",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_payment",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_payment_method",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_purchase",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_purchase_order",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_refund_receipt",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_sales_receipt",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_term",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_time_activity",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_transfer",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_vendor",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    },
+    {
+      "operation_id": "update_vendor_credit",
+      "effect_kind": "accounting_write",
+      "channel": "quickbooks",
+      "idempotency": "required",
+      "test_mode_behavior": "suppress"
+    }
+  ],
+  "artifact_policies": [
+    {
+      "operation_id": "get_invoice_pdf",
+      "outputs": [
+        {
+          "kind": "artifact",
+          "value_type": "artifact_handle",
+          "binding_key": "pdf_artifact_handle",
+          "filename": "invoice.pdf",
+          "content_type": "application/pdf",
+          "max_size_bytes": 20971520,
+          "retention_class": "run_window"
+        }
+      ]
+    },
+    {
+      "operation_id": "create_attachable",
+      "inputs": [
+        {
+          "kind": "artifact",
+          "value_type": "artifact_handle",
+          "binding_key": "attachment_input",
+          "from_input": "artifact_handle",
+          "required": false,
+          "max_size_bytes": 104857600
+        }
+      ]
+    }
+  ]
+}

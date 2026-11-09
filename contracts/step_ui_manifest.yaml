@@ -1,0 +1,2672 @@
+{
+  "forms": [
+    {
+      "operation_id": "create_account",
+      "title": "Create Account",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_attachable",
+      "title": "Create Attachable",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        },
+        {
+          "name": "artifact_handle",
+          "widget_type": "text",
+          "label": "Artifact Handle",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "create_bill",
+      "title": "Create Bill",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_bill_payment",
+      "title": "Create Bill Payment",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_class",
+      "title": "Create Class",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_credit_memo",
+      "title": "Create Credit Memo",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_customer",
+      "title": "Create Customer",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_department",
+      "title": "Create Department",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_deposit",
+      "title": "Create Deposit",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_employee",
+      "title": "Create Employee",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_estimate",
+      "title": "Create Estimate",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_invoice",
+      "title": "Create Invoice",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_item",
+      "title": "Create Item",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_journal_entry",
+      "title": "Create Journal Entry",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_payment",
+      "title": "Create Payment",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_payment_method",
+      "title": "Create Payment Method",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_purchase",
+      "title": "Create Purchase",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_purchase_order",
+      "title": "Create Purchase Order",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_refund_receipt",
+      "title": "Create Refund Receipt",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_sales_receipt",
+      "title": "Create Sales Receipt",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_term",
+      "title": "Create Term",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_time_activity",
+      "title": "Create Time Activity",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_transfer",
+      "title": "Create Transfer",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_vendor",
+      "title": "Create Vendor",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "create_vendor_credit",
+      "title": "Create Vendor Credit",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "delete_attachable",
+      "title": "Delete Attachable",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "widget_type": "text",
+          "label": "Sync Token",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "widget_type": "text",
+          "label": "Delete Mode",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "delete_bill",
+      "title": "Delete Bill",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "widget_type": "text",
+          "label": "Sync Token",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "widget_type": "text",
+          "label": "Delete Mode",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "delete_bill_payment",
+      "title": "Delete Bill Payment",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "widget_type": "text",
+          "label": "Sync Token",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "widget_type": "text",
+          "label": "Delete Mode",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "delete_credit_memo",
+      "title": "Delete Credit Memo",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "widget_type": "text",
+          "label": "Sync Token",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "widget_type": "text",
+          "label": "Delete Mode",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "delete_customer",
+      "title": "Delete Customer",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "widget_type": "text",
+          "label": "Sync Token",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "widget_type": "text",
+          "label": "Delete Mode",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "delete_deposit",
+      "title": "Delete Deposit",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "widget_type": "text",
+          "label": "Sync Token",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "widget_type": "text",
+          "label": "Delete Mode",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "delete_employee",
+      "title": "Delete Employee",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "widget_type": "text",
+          "label": "Sync Token",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "widget_type": "text",
+          "label": "Delete Mode",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "delete_estimate",
+      "title": "Delete Estimate",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "widget_type": "text",
+          "label": "Sync Token",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "widget_type": "text",
+          "label": "Delete Mode",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "delete_invoice",
+      "title": "Delete Invoice",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "widget_type": "text",
+          "label": "Sync Token",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "widget_type": "text",
+          "label": "Delete Mode",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "delete_item",
+      "title": "Delete Item",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "widget_type": "text",
+          "label": "Sync Token",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "widget_type": "text",
+          "label": "Delete Mode",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "delete_journal_entry",
+      "title": "Delete Journal Entry",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "widget_type": "text",
+          "label": "Sync Token",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "widget_type": "text",
+          "label": "Delete Mode",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "delete_payment",
+      "title": "Delete Payment",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "widget_type": "text",
+          "label": "Sync Token",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "widget_type": "text",
+          "label": "Delete Mode",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "delete_purchase",
+      "title": "Delete Purchase",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "widget_type": "text",
+          "label": "Sync Token",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "widget_type": "text",
+          "label": "Delete Mode",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "delete_purchase_order",
+      "title": "Delete Purchase Order",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "widget_type": "text",
+          "label": "Sync Token",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "widget_type": "text",
+          "label": "Delete Mode",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "delete_refund_receipt",
+      "title": "Delete Refund Receipt",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "widget_type": "text",
+          "label": "Sync Token",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "widget_type": "text",
+          "label": "Delete Mode",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "delete_sales_receipt",
+      "title": "Delete Sales Receipt",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "widget_type": "text",
+          "label": "Sync Token",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "widget_type": "text",
+          "label": "Delete Mode",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "delete_time_activity",
+      "title": "Delete Time Activity",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "widget_type": "text",
+          "label": "Sync Token",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "widget_type": "text",
+          "label": "Delete Mode",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "delete_transfer",
+      "title": "Delete Transfer",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "widget_type": "text",
+          "label": "Sync Token",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "widget_type": "text",
+          "label": "Delete Mode",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "delete_vendor",
+      "title": "Delete Vendor",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "widget_type": "text",
+          "label": "Sync Token",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "widget_type": "text",
+          "label": "Delete Mode",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "delete_vendor_credit",
+      "title": "Delete Vendor Credit",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "widget_type": "text",
+          "label": "Sync Token",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "widget_type": "text",
+          "label": "Delete Mode",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "get_account",
+      "title": "Get Account",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_aged_payables",
+      "title": "Get Aged Payables",
+      "fields": [
+        {
+          "name": "options",
+          "widget_type": "json",
+          "label": "Options",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "get_aged_receivables",
+      "title": "Get Aged Receivables",
+      "fields": [
+        {
+          "name": "options",
+          "widget_type": "json",
+          "label": "Options",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "get_aged_receivables_detail",
+      "title": "Get Aged Receivables Detail",
+      "fields": [
+        {
+          "name": "options",
+          "widget_type": "json",
+          "label": "Options",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "get_attachable",
+      "title": "Get Attachable",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_balance_sheet",
+      "title": "Get Balance Sheet",
+      "fields": [
+        {
+          "name": "options",
+          "widget_type": "json",
+          "label": "Options",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "get_bill",
+      "title": "Get Bill",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_bill_payment",
+      "title": "Get Bill Payment",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_cash_flow",
+      "title": "Get Cash Flow",
+      "fields": [
+        {
+          "name": "options",
+          "widget_type": "json",
+          "label": "Options",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "get_class",
+      "title": "Get Class",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_company_info",
+      "title": "Get Company Info",
+      "fields": []
+    },
+    {
+      "operation_id": "get_credit_memo",
+      "title": "Get Credit Memo",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_customer",
+      "title": "Get Customer",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_customer_balance",
+      "title": "Get Customer Balance",
+      "fields": [
+        {
+          "name": "options",
+          "widget_type": "json",
+          "label": "Options",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "get_customer_sales",
+      "title": "Get Customer Sales",
+      "fields": [
+        {
+          "name": "options",
+          "widget_type": "json",
+          "label": "Options",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "get_department",
+      "title": "Get Department",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_deposit",
+      "title": "Get Deposit",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_employee",
+      "title": "Get Employee",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_estimate",
+      "title": "Get Estimate",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_general_ledger",
+      "title": "Get General Ledger",
+      "fields": [
+        {
+          "name": "options",
+          "widget_type": "json",
+          "label": "Options",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "get_invoice",
+      "title": "Get Invoice",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_invoice_pdf",
+      "title": "Get Invoice Pdf",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_item",
+      "title": "Get Item",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_journal_entry",
+      "title": "Get Journal Entry",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_payment",
+      "title": "Get Payment",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_payment_method",
+      "title": "Get Payment Method",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_preferences",
+      "title": "Get Preferences",
+      "fields": []
+    },
+    {
+      "operation_id": "get_profit_and_loss",
+      "title": "Get Profit And Loss",
+      "fields": [
+        {
+          "name": "options",
+          "widget_type": "json",
+          "label": "Options",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "get_purchase",
+      "title": "Get Purchase",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_purchase_order",
+      "title": "Get Purchase Order",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_refund_receipt",
+      "title": "Get Refund Receipt",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_sales_receipt",
+      "title": "Get Sales Receipt",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_tax_agency",
+      "title": "Get Tax Agency",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_tax_code",
+      "title": "Get Tax Code",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_tax_rate",
+      "title": "Get Tax Rate",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_term",
+      "title": "Get Term",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_time_activity",
+      "title": "Get Time Activity",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_transfer",
+      "title": "Get Transfer",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_trial_balance",
+      "title": "Get Trial Balance",
+      "fields": [
+        {
+          "name": "options",
+          "widget_type": "json",
+          "label": "Options",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "get_vendor",
+      "title": "Get Vendor",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_vendor_balance",
+      "title": "Get Vendor Balance",
+      "fields": [
+        {
+          "name": "options",
+          "widget_type": "json",
+          "label": "Options",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "get_vendor_credit",
+      "title": "Get Vendor Credit",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "get_vendor_expenses",
+      "title": "Get Vendor Expenses",
+      "fields": [
+        {
+          "name": "options",
+          "widget_type": "json",
+          "label": "Options",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "read_invoice",
+      "title": "Read Invoice",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "read_item",
+      "title": "Read Item",
+      "fields": [
+        {
+          "name": "entity_id",
+          "widget_type": "text",
+          "label": "Entity Id",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "search_accounts",
+      "title": "Search Accounts",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_attachables",
+      "title": "Search Attachables",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_bill_payments",
+      "title": "Search Bill Payments",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_bills",
+      "title": "Search Bills",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_budgets",
+      "title": "Search Budgets",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_classes",
+      "title": "Search Classes",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_credit_memos",
+      "title": "Search Credit Memos",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_customers",
+      "title": "Search Customers",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_departments",
+      "title": "Search Departments",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_deposits",
+      "title": "Search Deposits",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_employees",
+      "title": "Search Employees",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_estimates",
+      "title": "Search Estimates",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_invoices",
+      "title": "Search Invoices",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_items",
+      "title": "Search Items",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_journal_entries",
+      "title": "Search Journal Entries",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_payment_methods",
+      "title": "Search Payment Methods",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_payments",
+      "title": "Search Payments",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_purchase_orders",
+      "title": "Search Purchase Orders",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_purchases",
+      "title": "Search Purchases",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_refund_receipts",
+      "title": "Search Refund Receipts",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_sales_receipts",
+      "title": "Search Sales Receipts",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_tax_agencies",
+      "title": "Search Tax Agencies",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_tax_codes",
+      "title": "Search Tax Codes",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_tax_rates",
+      "title": "Search Tax Rates",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_terms",
+      "title": "Search Terms",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_time_activities",
+      "title": "Search Time Activities",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_transfers",
+      "title": "Search Transfers",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_vendor_credits",
+      "title": "Search Vendor Credits",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "search_vendors",
+      "title": "Search Vendors",
+      "fields": [
+        {
+          "name": "filters",
+          "widget_type": "json",
+          "label": "Filters",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "widget_type": "integer",
+          "label": "Start Position",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "widget_type": "integer",
+          "label": "Max Results",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "widget_type": "text",
+          "label": "Order By",
+          "required": false
+        },
+        {
+          "name": "count",
+          "widget_type": "boolean",
+          "label": "Count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "operation_id": "update_account",
+      "title": "Update Account",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_attachable",
+      "title": "Update Attachable",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_bill",
+      "title": "Update Bill",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_bill_payment",
+      "title": "Update Bill Payment",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_class",
+      "title": "Update Class",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_company_info",
+      "title": "Update Company Info",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_credit_memo",
+      "title": "Update Credit Memo",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_customer",
+      "title": "Update Customer",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_department",
+      "title": "Update Department",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_deposit",
+      "title": "Update Deposit",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_employee",
+      "title": "Update Employee",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_estimate",
+      "title": "Update Estimate",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_invoice",
+      "title": "Update Invoice",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_item",
+      "title": "Update Item",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_journal_entry",
+      "title": "Update Journal Entry",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_payment",
+      "title": "Update Payment",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_payment_method",
+      "title": "Update Payment Method",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_purchase",
+      "title": "Update Purchase",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_purchase_order",
+      "title": "Update Purchase Order",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_refund_receipt",
+      "title": "Update Refund Receipt",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_sales_receipt",
+      "title": "Update Sales Receipt",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_term",
+      "title": "Update Term",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_time_activity",
+      "title": "Update Time Activity",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_transfer",
+      "title": "Update Transfer",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_vendor",
+      "title": "Update Vendor",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    },
+    {
+      "operation_id": "update_vendor_credit",
+      "title": "Update Vendor Credit",
+      "fields": [
+        {
+          "name": "data",
+          "widget_type": "json",
+          "label": "Data",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "skill_id": "quickbooks_accounting_workflows",
+  "version": "1.0.0",
+  "display_name": "QuickBooks accounting workflows",
+  "description": "Plan company-scoped QuickBooks reports and accounting workflows using the installed extension operations.",
+  "enabled": true,
+  "category": "finance",
+  "instructions": [
+    "Discover flowsteward.quickbooks operations and their current input schemas through the platform catalog before building a workflow.",
+    "Require an explicit QuickBooks company connection_ref; confirm the company and environment from get_company_info before selecting records.",
+    "For financial analysis use get_profit_and_loss, get_balance_sheet, get_cash_flow and aging reports. Preserve provider totals, currency, dates and accounting method in the answer.",
+    "Use search operations in bounded pages; follow next_start_position rather than claiming a first page is the complete ledger.",
+    "Read an entity before preparing an update or deletion. Keep Id and the observed SyncToken. A conflict requires reviewing the new state; never overwrite it blindly.",
+    "Prepare native QBO data with explicit customer, vendor, account, item, currency and tax references. Obtain missing required business facts instead of guessing.",
+    "Accounting mutations must run through declared extension operations so the host owns external-effect claims and test suppression. Recording a Payment does not charge a payment card.",
+    "Deletion of Customer, Vendor, Employee and Item means inactivation. Select delete or void explicitly for supported transactions; never switch modes after a failure.",
+    "Pass document handles from the platform artifact plane; do not supply local filesystem paths, OAuth tokens or arbitrary download URLs.",
+    "After a timeout with unknown write outcome, inspect the provider state and retain the original host claim for an authorized retry; do not create a fresh duplicate transaction."
+  ],
+  "expected_inputs": [
+    {
+      "name": "request",
+      "type": "paragraph",
+      "required": true,
+      "description": "The accounting task, company connection, reporting period and any authorized mutation details."
+    }
+  ],
+  "expected_outputs": [
+    {
+      "name": "accounting_result",
+      "type": "text",
+      "required": true,
+      "description": "The operation plan or verified provider result with company, period, records and artifact references."
+    }
+  ],
+  "builder_metadata_jsonb": {
+    "purpose": "Use the installed QuickBooks operations accurately in accounting workflows.",
+    "use_cases": [
+      "financial reports",
+      "invoice and bill workflows",
+      "accounting record lookup"
+    ],
+    "anti_use_cases": [
+      "QuickBooks Desktop",
+      "card payment processing",
+      "unapproved accounting changes"
+    ],
+    "composition_role": "execution",
+    "determinism_level": "hybrid",
+    "safe_for_auto_use": false
+  },
+  "tags": [
+    "quickbooks",
+    "accounting",
+    "workflow"
+  ]
+}

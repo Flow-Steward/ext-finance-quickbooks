@@ -1,0 +1,14 @@
+{
+  "page_id": "setup-guide",
+  "title": "QuickBooks Online setup",
+  "description": "Register an Intuit app, enter its credentials and connect a company. See the bundled README for sandbox, production and Company ID instructions.",
+  "project_scoped": true,
+  "components": [
+    {
+      "component_id": "quickbooks_setup",
+      "type": "markdown",
+      "title": "Connect your QuickBooks company",
+      "body": "Register a QuickBooks Online Accounting app at https://developer.intuit.com/. Add the exact callback URL shown in the project OAuth setup to the Intuit app. Production requires public HTTPS. Save the matching Client ID and Client Secret in this project. Use development keys for sandbox and production keys for real books.\n\nCreate one company connection, enter its Company ID (realm_id), select its environment, and authorize that same company. The CompanyInfo check confirms access. Add separate connections for additional companies. Select the explicit company connection in each workflow.\n\nUpdates require Id and SyncToken; stale versions return conflict. Customer, Vendor, Employee and Item deletion makes them inactive. Other deletions and voids are explicit. Write categories can be disabled on the connection. Test Run suppresses writes.\n\nTokens are managed by Flow Steward. Never paste refresh tokens or client secrets into workflow inputs. This extension uses the public QuickBooks Accounting API; the Claude cloud connector is not required."
+    }
+  ]
+}

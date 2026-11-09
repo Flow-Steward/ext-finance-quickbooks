@@ -1,0 +1,9 @@
+QuickBooks Online extension for Flow Steward
+Copyright 2026 Flow Steward contributors
+
+This independent integration is distributed under Apache License 2.0.
+Intuit's QuickBooks Online MCP server was studied as a behavioral reference;
+its MIT license is included as UPSTREAM-LICENSE. Native REST implementation
+uses the Flow Steward public extension SDK and Python standard library.
+QuickBooks and Intuit are trademarks of Intuit Inc. Artwork provenance and
+applicable brand-policy links are recorded in BRANDING.md.

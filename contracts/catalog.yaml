@@ -1,0 +1,730 @@
+{
+  "upstream_commit": "31a1dd5c3e170e368dbff651abbaf61aabde6ed9",
+  "operations": {
+    "create_account": {
+      "kind": "create",
+      "entity": "Account",
+      "upstream_path": "src/tools/create-account.tool.ts"
+    },
+    "create_attachable": {
+      "kind": "create",
+      "entity": "Attachable",
+      "upstream_path": "src/tools/create-attachable.tool.ts"
+    },
+    "create_bill_payment": {
+      "kind": "create",
+      "entity": "BillPayment",
+      "upstream_path": "src/tools/create-bill-payment.tool.ts"
+    },
+    "create_bill": {
+      "kind": "create",
+      "entity": "Bill",
+      "upstream_path": "src/tools/create-bill.tool.ts"
+    },
+    "create_class": {
+      "kind": "create",
+      "entity": "Class",
+      "upstream_path": "src/tools/create-class.tool.ts"
+    },
+    "create_credit_memo": {
+      "kind": "create",
+      "entity": "CreditMemo",
+      "upstream_path": "src/tools/create-credit-memo.tool.ts"
+    },
+    "create_customer": {
+      "kind": "create",
+      "entity": "Customer",
+      "upstream_path": "src/tools/create-customer.tool.ts"
+    },
+    "create_department": {
+      "kind": "create",
+      "entity": "Department",
+      "upstream_path": "src/tools/create-department.tool.ts"
+    },
+    "create_deposit": {
+      "kind": "create",
+      "entity": "Deposit",
+      "upstream_path": "src/tools/create-deposit.tool.ts"
+    },
+    "create_employee": {
+      "kind": "create",
+      "entity": "Employee",
+      "upstream_path": "src/tools/create-employee.tool.ts"
+    },
+    "create_estimate": {
+      "kind": "create",
+      "entity": "Estimate",
+      "upstream_path": "src/tools/create-estimate.tool.ts"
+    },
+    "create_invoice": {
+      "kind": "create",
+      "entity": "Invoice",
+      "upstream_path": "src/tools/create-invoice.tool.ts"
+    },
+    "create_item": {
+      "kind": "create",
+      "entity": "Item",
+      "upstream_path": "src/tools/create-item.tool.ts"
+    },
+    "create_journal_entry": {
+      "kind": "create",
+      "entity": "JournalEntry",
+      "upstream_path": "src/tools/create-journal-entry.tool.ts"
+    },
+    "create_payment_method": {
+      "kind": "create",
+      "entity": "PaymentMethod",
+      "upstream_path": "src/tools/create-payment-method.tool.ts"
+    },
+    "create_payment": {
+      "kind": "create",
+      "entity": "Payment",
+      "upstream_path": "src/tools/create-payment.tool.ts"
+    },
+    "create_purchase_order": {
+      "kind": "create",
+      "entity": "PurchaseOrder",
+      "upstream_path": "src/tools/create-purchase-order.tool.ts"
+    },
+    "create_purchase": {
+      "kind": "create",
+      "entity": "Purchase",
+      "upstream_path": "src/tools/create-purchase.tool.ts"
+    },
+    "create_refund_receipt": {
+      "kind": "create",
+      "entity": "RefundReceipt",
+      "upstream_path": "src/tools/create-refund-receipt.tool.ts"
+    },
+    "create_sales_receipt": {
+      "kind": "create",
+      "entity": "SalesReceipt",
+      "upstream_path": "src/tools/create-sales-receipt.tool.ts"
+    },
+    "create_term": {
+      "kind": "create",
+      "entity": "Term",
+      "upstream_path": "src/tools/create-term.tool.ts"
+    },
+    "create_time_activity": {
+      "kind": "create",
+      "entity": "TimeActivity",
+      "upstream_path": "src/tools/create-time-activity.tool.ts"
+    },
+    "create_transfer": {
+      "kind": "create",
+      "entity": "Transfer",
+      "upstream_path": "src/tools/create-transfer.tool.ts"
+    },
+    "create_vendor_credit": {
+      "kind": "create",
+      "entity": "VendorCredit",
+      "upstream_path": "src/tools/create-vendor-credit.tool.ts"
+    },
+    "create_vendor": {
+      "kind": "create",
+      "entity": "Vendor",
+      "upstream_path": "src/tools/create-vendor.tool.ts"
+    },
+    "delete_attachable": {
+      "kind": "delete",
+      "entity": "Attachable",
+      "upstream_path": "src/tools/delete-attachable.tool.ts"
+    },
+    "delete_bill_payment": {
+      "kind": "delete",
+      "entity": "BillPayment",
+      "upstream_path": "src/tools/delete-bill-payment.tool.ts"
+    },
+    "delete_bill": {
+      "kind": "delete",
+      "entity": "Bill",
+      "upstream_path": "src/tools/delete-bill.tool.ts"
+    },
+    "delete_credit_memo": {
+      "kind": "delete",
+      "entity": "CreditMemo",
+      "upstream_path": "src/tools/delete-credit-memo.tool.ts"
+    },
+    "delete_customer": {
+      "kind": "delete",
+      "entity": "Customer",
+      "upstream_path": "src/tools/delete-customer.tool.ts"
+    },
+    "delete_deposit": {
+      "kind": "delete",
+      "entity": "Deposit",
+      "upstream_path": "src/tools/delete-deposit.tool.ts"
+    },
+    "delete_employee": {
+      "kind": "delete",
+      "entity": "Employee",
+      "upstream_path": "src/tools/delete-employee.tool.ts"
+    },
+    "delete_estimate": {
+      "kind": "delete",
+      "entity": "Estimate",
+      "upstream_path": "src/tools/delete-estimate.tool.ts"
+    },
+    "delete_invoice": {
+      "kind": "delete",
+      "entity": "Invoice",
+      "upstream_path": "src/tools/delete-invoice.tool.ts"
+    },
+    "delete_item": {
+      "kind": "delete",
+      "entity": "Item",
+      "upstream_path": "src/tools/delete-item.tool.ts"
+    },
+    "delete_journal_entry": {
+      "kind": "delete",
+      "entity": "JournalEntry",
+      "upstream_path": "src/tools/delete-journal-entry.tool.ts"
+    },
+    "delete_payment": {
+      "kind": "delete",
+      "entity": "Payment",
+      "upstream_path": "src/tools/delete-payment.tool.ts"
+    },
+    "delete_purchase_order": {
+      "kind": "delete",
+      "entity": "PurchaseOrder",
+      "upstream_path": "src/tools/delete-purchase-order.tool.ts"
+    },
+    "delete_purchase": {
+      "kind": "delete",
+      "entity": "Purchase",
+      "upstream_path": "src/tools/delete-purchase.tool.ts"
+    },
+    "delete_refund_receipt": {
+      "kind": "delete",
+      "entity": "RefundReceipt",
+      "upstream_path": "src/tools/delete-refund-receipt.tool.ts"
+    },
+    "delete_sales_receipt": {
+      "kind": "delete",
+      "entity": "SalesReceipt",
+      "upstream_path": "src/tools/delete-sales-receipt.tool.ts"
+    },
+    "delete_time_activity": {
+      "kind": "delete",
+      "entity": "TimeActivity",
+      "upstream_path": "src/tools/delete-time-activity.tool.ts"
+    },
+    "delete_transfer": {
+      "kind": "delete",
+      "entity": "Transfer",
+      "upstream_path": "src/tools/delete-transfer.tool.ts"
+    },
+    "delete_vendor_credit": {
+      "kind": "delete",
+      "entity": "VendorCredit",
+      "upstream_path": "src/tools/delete-vendor-credit.tool.ts"
+    },
+    "delete_vendor": {
+      "kind": "delete",
+      "entity": "Vendor",
+      "upstream_path": "src/tools/delete-vendor.tool.ts"
+    },
+    "get_account": {
+      "kind": "get",
+      "entity": "Account",
+      "upstream_path": "src/tools/get-account.tool.ts"
+    },
+    "get_aged_payables": {
+      "kind": "report",
+      "entity": "AgedPayables",
+      "upstream_path": "src/tools/get-aged-payables.tool.ts"
+    },
+    "get_aged_receivables": {
+      "kind": "report",
+      "entity": "AgedReceivables",
+      "upstream_path": "src/tools/get-aged-receivables.tool.ts"
+    },
+    "get_attachable": {
+      "kind": "get",
+      "entity": "Attachable",
+      "upstream_path": "src/tools/get-attachable.tool.ts"
+    },
+    "get_balance_sheet": {
+      "kind": "report",
+      "entity": "BalanceSheet",
+      "upstream_path": "src/tools/get-balance-sheet.tool.ts"
+    },
+    "get_bill_payment": {
+      "kind": "get",
+      "entity": "BillPayment",
+      "upstream_path": "src/tools/get-bill-payment.tool.ts"
+    },
+    "get_bill": {
+      "kind": "get",
+      "entity": "Bill",
+      "upstream_path": "src/tools/get-bill.tool.ts"
+    },
+    "get_cash_flow": {
+      "kind": "report",
+      "entity": "CashFlow",
+      "upstream_path": "src/tools/get-cash-flow.tool.ts"
+    },
+    "get_class": {
+      "kind": "get",
+      "entity": "Class",
+      "upstream_path": "src/tools/get-class.tool.ts"
+    },
+    "get_company_info": {
+      "kind": "get",
+      "entity": "CompanyInfo",
+      "upstream_path": "src/tools/get-company-info.tool.ts"
+    },
+    "get_credit_memo": {
+      "kind": "get",
+      "entity": "CreditMemo",
+      "upstream_path": "src/tools/get-credit-memo.tool.ts"
+    },
+    "get_customer_balance": {
+      "kind": "report",
+      "entity": "CustomerBalance",
+      "upstream_path": "src/tools/get-customer-balance.tool.ts"
+    },
+    "get_customer_sales": {
+      "kind": "report",
+      "entity": "CustomerSales",
+      "upstream_path": "src/tools/get-customer-sales.tool.ts"
+    },
+    "get_customer": {
+      "kind": "get",
+      "entity": "Customer",
+      "upstream_path": "src/tools/get-customer.tool.ts"
+    },
+    "get_department": {
+      "kind": "get",
+      "entity": "Department",
+      "upstream_path": "src/tools/get-department.tool.ts"
+    },
+    "get_deposit": {
+      "kind": "get",
+      "entity": "Deposit",
+      "upstream_path": "src/tools/get-deposit.tool.ts"
+    },
+    "get_employee": {
+      "kind": "get",
+      "entity": "Employee",
+      "upstream_path": "src/tools/get-employee.tool.ts"
+    },
+    "get_estimate": {
+      "kind": "get",
+      "entity": "Estimate",
+      "upstream_path": "src/tools/get-estimate.tool.ts"
+    },
+    "get_general_ledger": {
+      "kind": "report",
+      "entity": "GeneralLedger",
+      "upstream_path": "src/tools/get-general-ledger.tool.ts"
+    },
+    "get_invoice_pdf": {
+      "kind": "pdf",
+      "entity": "Invoice",
+      "upstream_path": "src/tools/get-invoice-pdf.tool.ts"
+    },
+    "get_journal_entry": {
+      "kind": "get",
+      "entity": "JournalEntry",
+      "upstream_path": "src/tools/get-journal-entry.tool.ts"
+    },
+    "get_payment_method": {
+      "kind": "get",
+      "entity": "PaymentMethod",
+      "upstream_path": "src/tools/get-payment-method.tool.ts"
+    },
+    "get_payment": {
+      "kind": "get",
+      "entity": "Payment",
+      "upstream_path": "src/tools/get-payment.tool.ts"
+    },
+    "get_preferences": {
+      "kind": "get",
+      "entity": "Preferences",
+      "upstream_path": "src/tools/get-preferences.tool.ts"
+    },
+    "get_profit_and_loss": {
+      "kind": "report",
+      "entity": "ProfitAndLoss",
+      "upstream_path": "src/tools/get-profit-and-loss.tool.ts"
+    },
+    "get_purchase_order": {
+      "kind": "get",
+      "entity": "PurchaseOrder",
+      "upstream_path": "src/tools/get-purchase-order.tool.ts"
+    },
+    "get_purchase": {
+      "kind": "get",
+      "entity": "Purchase",
+      "upstream_path": "src/tools/get-purchase.tool.ts"
+    },
+    "get_refund_receipt": {
+      "kind": "get",
+      "entity": "RefundReceipt",
+      "upstream_path": "src/tools/get-refund-receipt.tool.ts"
+    },
+    "get_sales_receipt": {
+      "kind": "get",
+      "entity": "SalesReceipt",
+      "upstream_path": "src/tools/get-sales-receipt.tool.ts"
+    },
+    "get_tax_agency": {
+      "kind": "get",
+      "entity": "TaxAgency",
+      "upstream_path": "src/tools/get-tax-agency.tool.ts"
+    },
+    "get_tax_code": {
+      "kind": "get",
+      "entity": "TaxCode",
+      "upstream_path": "src/tools/get-tax-code.tool.ts"
+    },
+    "get_tax_rate": {
+      "kind": "get",
+      "entity": "TaxRate",
+      "upstream_path": "src/tools/get-tax-rate.tool.ts"
+    },
+    "get_term": {
+      "kind": "get",
+      "entity": "Term",
+      "upstream_path": "src/tools/get-term.tool.ts"
+    },
+    "get_time_activity": {
+      "kind": "get",
+      "entity": "TimeActivity",
+      "upstream_path": "src/tools/get-time-activity.tool.ts"
+    },
+    "get_transfer": {
+      "kind": "get",
+      "entity": "Transfer",
+      "upstream_path": "src/tools/get-transfer.tool.ts"
+    },
+    "get_trial_balance": {
+      "kind": "report",
+      "entity": "TrialBalance",
+      "upstream_path": "src/tools/get-trial-balance.tool.ts"
+    },
+    "get_vendor_balance": {
+      "kind": "report",
+      "entity": "VendorBalance",
+      "upstream_path": "src/tools/get-vendor-balance.tool.ts"
+    },
+    "get_vendor_credit": {
+      "kind": "get",
+      "entity": "VendorCredit",
+      "upstream_path": "src/tools/get-vendor-credit.tool.ts"
+    },
+    "get_vendor_expenses": {
+      "kind": "report",
+      "entity": "VendorExpenses",
+      "upstream_path": "src/tools/get-vendor-expenses.tool.ts"
+    },
+    "get_vendor": {
+      "kind": "get",
+      "entity": "Vendor",
+      "upstream_path": "src/tools/get-vendor.tool.ts"
+    },
+    "read_invoice": {
+      "kind": "read",
+      "entity": "Invoice",
+      "upstream_path": "src/tools/read-invoice.tool.ts"
+    },
+    "read_item": {
+      "kind": "read",
+      "entity": "Item",
+      "upstream_path": "src/tools/read-item.tool.ts"
+    },
+    "search_accounts": {
+      "kind": "search",
+      "entity": "Account",
+      "upstream_path": "src/tools/search-accounts.tool.ts"
+    },
+    "search_attachables": {
+      "kind": "search",
+      "entity": "Attachable",
+      "upstream_path": "src/tools/search-attachables.tool.ts"
+    },
+    "search_bill_payments": {
+      "kind": "search",
+      "entity": "BillPayment",
+      "upstream_path": "src/tools/search-bill-payments.tool.ts"
+    },
+    "search_bills": {
+      "kind": "search",
+      "entity": "Bill",
+      "upstream_path": "src/tools/search-bills.tool.ts"
+    },
+    "search_budgets": {
+      "kind": "search",
+      "entity": "Budget",
+      "upstream_path": "src/tools/search-budgets.tool.ts"
+    },
+    "search_classes": {
+      "kind": "search",
+      "entity": "Class",
+      "upstream_path": "src/tools/search-classes.tool.ts"
+    },
+    "search_credit_memos": {
+      "kind": "search",
+      "entity": "CreditMemo",
+      "upstream_path": "src/tools/search-credit-memos.tool.ts"
+    },
+    "search_customers": {
+      "kind": "search",
+      "entity": "Customer",
+      "upstream_path": "src/tools/search-customers.tool.ts"
+    },
+    "search_departments": {
+      "kind": "search",
+      "entity": "Department",
+      "upstream_path": "src/tools/search-departments.tool.ts"
+    },
+    "search_deposits": {
+      "kind": "search",
+      "entity": "Deposit",
+      "upstream_path": "src/tools/search-deposits.tool.ts"
+    },
+    "search_employees": {
+      "kind": "search",
+      "entity": "Employee",
+      "upstream_path": "src/tools/search-employees.tool.ts"
+    },
+    "search_estimates": {
+      "kind": "search",
+      "entity": "Estimate",
+      "upstream_path": "src/tools/search-estimates.tool.ts"
+    },
+    "search_invoices": {
+      "kind": "search",
+      "entity": "Invoice",
+      "upstream_path": "src/tools/search-invoices.tool.ts"
+    },
+    "search_items": {
+      "kind": "search",
+      "entity": "Item",
+      "upstream_path": "src/tools/search-items.tool.ts"
+    },
+    "search_journal_entries": {
+      "kind": "search",
+      "entity": "JournalEntry",
+      "upstream_path": "src/tools/search-journal-entries.tool.ts"
+    },
+    "search_payment_methods": {
+      "kind": "search",
+      "entity": "PaymentMethod",
+      "upstream_path": "src/tools/search-payment-methods.tool.ts"
+    },
+    "search_payments": {
+      "kind": "search",
+      "entity": "Payment",
+      "upstream_path": "src/tools/search-payments.tool.ts"
+    },
+    "search_purchase_orders": {
+      "kind": "search",
+      "entity": "PurchaseOrder",
+      "upstream_path": "src/tools/search-purchase-orders.tool.ts"
+    },
+    "search_purchases": {
+      "kind": "search",
+      "entity": "Purchase",
+      "upstream_path": "src/tools/search-purchases.tool.ts"
+    },
+    "search_refund_receipts": {
+      "kind": "search",
+      "entity": "RefundReceipt",
+      "upstream_path": "src/tools/search-refund-receipts.tool.ts"
+    },
+    "search_sales_receipts": {
+      "kind": "search",
+      "entity": "SalesReceipt",
+      "upstream_path": "src/tools/search-sales-receipts.tool.ts"
+    },
+    "search_tax_agencies": {
+      "kind": "search",
+      "entity": "TaxAgency",
+      "upstream_path": "src/tools/search-tax-agencies.tool.ts"
+    },
+    "search_tax_codes": {
+      "kind": "search",
+      "entity": "TaxCode",
+      "upstream_path": "src/tools/search-tax-codes.tool.ts"
+    },
+    "search_tax_rates": {
+      "kind": "search",
+      "entity": "TaxRate",
+      "upstream_path": "src/tools/search-tax-rates.tool.ts"
+    },
+    "search_terms": {
+      "kind": "search",
+      "entity": "Term",
+      "upstream_path": "src/tools/search-terms.tool.ts"
+    },
+    "search_time_activities": {
+      "kind": "search",
+      "entity": "TimeActivity",
+      "upstream_path": "src/tools/search-time-activities.tool.ts"
+    },
+    "search_transfers": {
+      "kind": "search",
+      "entity": "Transfer",
+      "upstream_path": "src/tools/search-transfers.tool.ts"
+    },
+    "search_vendor_credits": {
+      "kind": "search",
+      "entity": "VendorCredit",
+      "upstream_path": "src/tools/search-vendor-credits.tool.ts"
+    },
+    "search_vendors": {
+      "kind": "search",
+      "entity": "Vendor",
+      "upstream_path": "src/tools/search-vendors.tool.ts"
+    },
+    "update_account": {
+      "kind": "update",
+      "entity": "Account",
+      "upstream_path": "src/tools/update-account.tool.ts"
+    },
+    "update_attachable": {
+      "kind": "update",
+      "entity": "Attachable",
+      "upstream_path": "src/tools/update-attachable.tool.ts"
+    },
+    "update_bill_payment": {
+      "kind": "update",
+      "entity": "BillPayment",
+      "upstream_path": "src/tools/update-bill-payment.tool.ts"
+    },
+    "update_bill": {
+      "kind": "update",
+      "entity": "Bill",
+      "upstream_path": "src/tools/update-bill.tool.ts"
+    },
+    "update_class": {
+      "kind": "update",
+      "entity": "Class",
+      "upstream_path": "src/tools/update-class.tool.ts"
+    },
+    "update_company_info": {
+      "kind": "update",
+      "entity": "CompanyInfo",
+      "upstream_path": "src/tools/update-company-info.tool.ts"
+    },
+    "update_credit_memo": {
+      "kind": "update",
+      "entity": "CreditMemo",
+      "upstream_path": "src/tools/update-credit-memo.tool.ts"
+    },
+    "update_customer": {
+      "kind": "update",
+      "entity": "Customer",
+      "upstream_path": "src/tools/update-customer.tool.ts"
+    },
+    "update_department": {
+      "kind": "update",
+      "entity": "Department",
+      "upstream_path": "src/tools/update-department.tool.ts"
+    },
+    "update_deposit": {
+      "kind": "update",
+      "entity": "Deposit",
+      "upstream_path": "src/tools/update-deposit.tool.ts"
+    },
+    "update_employee": {
+      "kind": "update",
+      "entity": "Employee",
+      "upstream_path": "src/tools/update-employee.tool.ts"
+    },
+    "update_estimate": {
+      "kind": "update",
+      "entity": "Estimate",
+      "upstream_path": "src/tools/update-estimate.tool.ts"
+    },
+    "update_invoice": {
+      "kind": "update",
+      "entity": "Invoice",
+      "upstream_path": "src/tools/update-invoice.tool.ts"
+    },
+    "update_item": {
+      "kind": "update",
+      "entity": "Item",
+      "upstream_path": "src/tools/update-item.tool.ts"
+    },
+    "update_journal_entry": {
+      "kind": "update",
+      "entity": "JournalEntry",
+      "upstream_path": "src/tools/update-journal-entry.tool.ts"
+    },
+    "update_payment_method": {
+      "kind": "update",
+      "entity": "PaymentMethod",
+      "upstream_path": "src/tools/update-payment-method.tool.ts"
+    },
+    "update_payment": {
+      "kind": "update",
+      "entity": "Payment",
+      "upstream_path": "src/tools/update-payment.tool.ts"
+    },
+    "update_purchase_order": {
+      "kind": "update",
+      "entity": "PurchaseOrder",
+      "upstream_path": "src/tools/update-purchase-order.tool.ts"
+    },
+    "update_purchase": {
+      "kind": "update",
+      "entity": "Purchase",
+      "upstream_path": "src/tools/update-purchase.tool.ts"
+    },
+    "update_refund_receipt": {
+      "kind": "update",
+      "entity": "RefundReceipt",
+      "upstream_path": "src/tools/update-refund-receipt.tool.ts"
+    },
+    "update_sales_receipt": {
+      "kind": "update",
+      "entity": "SalesReceipt",
+      "upstream_path": "src/tools/update-sales-receipt.tool.ts"
+    },
+    "update_term": {
+      "kind": "update",
+      "entity": "Term",
+      "upstream_path": "src/tools/update-term.tool.ts"
+    },
+    "update_time_activity": {
+      "kind": "update",
+      "entity": "TimeActivity",
+      "upstream_path": "src/tools/update-time-activity.tool.ts"
+    },
+    "update_transfer": {
+      "kind": "update",
+      "entity": "Transfer",
+      "upstream_path": "src/tools/update-transfer.tool.ts"
+    },
+    "update_vendor_credit": {
+      "kind": "update",
+      "entity": "VendorCredit",
+      "upstream_path": "src/tools/update-vendor-credit.tool.ts"
+    },
+    "update_vendor": {
+      "kind": "update",
+      "entity": "Vendor",
+      "upstream_path": "src/tools/update-vendor.tool.ts"
+    },
+    "get_invoice": {
+      "kind": "get",
+      "entity": "Invoice",
+      "upstream_path": null
+    },
+    "get_item": {
+      "kind": "get",
+      "entity": "Item",
+      "upstream_path": null
+    },
+    "get_aged_receivables_detail": {
+      "kind": "report",
+      "entity": "AgedReceivableDetail",
+      "upstream_path": null
+    }
+  }
+}

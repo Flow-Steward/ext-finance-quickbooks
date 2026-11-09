@@ -1,0 +1,220 @@
+{
+  "connection_types": [
+    {
+      "connection_type_id": "quickbooks_company",
+      "display_name": "QuickBooks Online company",
+      "description": "One explicitly selected company. Enter its Company ID (realm ID) before connecting.",
+      "auth": {
+        "type": "oauth2",
+        "provider_id": "intuit_oauth",
+        "scopes": {
+          "required": [
+            "com.intuit.quickbooks.accounting"
+          ],
+          "optional": []
+        }
+      },
+      "config_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "realm_id"
+        ],
+        "properties": {
+          "realm_id": {
+            "type": "string",
+            "pattern": "^[0-9]{1,32}$"
+          },
+          "environment": {
+            "type": "string",
+            "enum": [
+              "sandbox",
+              "production"
+            ],
+            "default": "sandbox"
+          },
+          "minor_version": {
+            "type": "integer",
+            "minimum": 75,
+            "maximum": 999,
+            "default": 75
+          },
+          "allow_create": {
+            "type": "boolean",
+            "default": true
+          },
+          "allow_update": {
+            "type": "boolean",
+            "default": true
+          },
+          "allow_delete": {
+            "type": "boolean",
+            "default": true
+          },
+          "request_timeout_seconds": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 60,
+            "default": 30
+          }
+        }
+      },
+      "secret_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "access_token": {
+            "type": "string"
+          }
+        }
+      },
+      "capabilities": [
+        "create_account",
+        "create_attachable",
+        "create_bill_payment",
+        "create_bill",
+        "create_class",
+        "create_credit_memo",
+        "create_customer",
+        "create_department",
+        "create_deposit",
+        "create_employee",
+        "create_estimate",
+        "create_invoice",
+        "create_item",
+        "create_journal_entry",
+        "create_payment_method",
+        "create_payment",
+        "create_purchase_order",
+        "create_purchase",
+        "create_refund_receipt",
+        "create_sales_receipt",
+        "create_term",
+        "create_time_activity",
+        "create_transfer",
+        "create_vendor_credit",
+        "create_vendor",
+        "delete_attachable",
+        "delete_bill_payment",
+        "delete_bill",
+        "delete_credit_memo",
+        "delete_customer",
+        "delete_deposit",
+        "delete_employee",
+        "delete_estimate",
+        "delete_invoice",
+        "delete_item",
+        "delete_journal_entry",
+        "delete_payment",
+        "delete_purchase_order",
+        "delete_purchase",
+        "delete_refund_receipt",
+        "delete_sales_receipt",
+        "delete_time_activity",
+        "delete_transfer",
+        "delete_vendor_credit",
+        "delete_vendor",
+        "get_account",
+        "get_aged_payables",
+        "get_aged_receivables",
+        "get_attachable",
+        "get_balance_sheet",
+        "get_bill_payment",
+        "get_bill",
+        "get_cash_flow",
+        "get_class",
+        "get_company_info",
+        "get_credit_memo",
+        "get_customer_balance",
+        "get_customer_sales",
+        "get_customer",
+        "get_department",
+        "get_deposit",
+        "get_employee",
+        "get_estimate",
+        "get_general_ledger",
+        "get_invoice_pdf",
+        "get_journal_entry",
+        "get_payment_method",
+        "get_payment",
+        "get_preferences",
+        "get_profit_and_loss",
+        "get_purchase_order",
+        "get_purchase",
+        "get_refund_receipt",
+        "get_sales_receipt",
+        "get_tax_agency",
+        "get_tax_code",
+        "get_tax_rate",
+        "get_term",
+        "get_time_activity",
+        "get_transfer",
+        "get_trial_balance",
+        "get_vendor_balance",
+        "get_vendor_credit",
+        "get_vendor_expenses",
+        "get_vendor",
+        "read_invoice",
+        "read_item",
+        "search_accounts",
+        "search_attachables",
+        "search_bill_payments",
+        "search_bills",
+        "search_budgets",
+        "search_classes",
+        "search_credit_memos",
+        "search_customers",
+        "search_departments",
+        "search_deposits",
+        "search_employees",
+        "search_estimates",
+        "search_invoices",
+        "search_items",
+        "search_journal_entries",
+        "search_payment_methods",
+        "search_payments",
+        "search_purchase_orders",
+        "search_purchases",
+        "search_refund_receipts",
+        "search_sales_receipts",
+        "search_tax_agencies",
+        "search_tax_codes",
+        "search_tax_rates",
+        "search_terms",
+        "search_time_activities",
+        "search_transfers",
+        "search_vendor_credits",
+        "search_vendors",
+        "update_account",
+        "update_attachable",
+        "update_bill_payment",
+        "update_bill",
+        "update_class",
+        "update_company_info",
+        "update_credit_memo",
+        "update_customer",
+        "update_department",
+        "update_deposit",
+        "update_employee",
+        "update_estimate",
+        "update_invoice",
+        "update_item",
+        "update_journal_entry",
+        "update_payment_method",
+        "update_payment",
+        "update_purchase_order",
+        "update_purchase",
+        "update_refund_receipt",
+        "update_sales_receipt",
+        "update_term",
+        "update_time_activity",
+        "update_transfer",
+        "update_vendor_credit",
+        "update_vendor",
+        "get_invoice",
+        "get_item",
+        "get_aged_receivables_detail"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7526 @@
+{
+  "actions": [
+    {
+      "action_id": "create_account",
+      "workflow_visible": true,
+      "title": "Create Account",
+      "description": "Create Account. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_attachable",
+      "workflow_visible": true,
+      "title": "Create Attachable",
+      "description": "Create Attachable. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        },
+        {
+          "name": "artifact_handle",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_bill",
+      "workflow_visible": true,
+      "title": "Create Bill",
+      "description": "Create Bill. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_bill_payment",
+      "workflow_visible": true,
+      "title": "Create Bill Payment",
+      "description": "Create Bill Payment. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_class",
+      "workflow_visible": true,
+      "title": "Create Class",
+      "description": "Create Class. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_credit_memo",
+      "workflow_visible": true,
+      "title": "Create Credit Memo",
+      "description": "Create Credit Memo. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_customer",
+      "workflow_visible": true,
+      "title": "Create Customer",
+      "description": "Create Customer. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_department",
+      "workflow_visible": true,
+      "title": "Create Department",
+      "description": "Create Department. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_deposit",
+      "workflow_visible": true,
+      "title": "Create Deposit",
+      "description": "Create Deposit. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_employee",
+      "workflow_visible": true,
+      "title": "Create Employee",
+      "description": "Create Employee. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_estimate",
+      "workflow_visible": true,
+      "title": "Create Estimate",
+      "description": "Create Estimate. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_invoice",
+      "workflow_visible": true,
+      "title": "Create Invoice",
+      "description": "Create Invoice. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_item",
+      "workflow_visible": true,
+      "title": "Create Item",
+      "description": "Create Item. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_journal_entry",
+      "workflow_visible": true,
+      "title": "Create Journal Entry",
+      "description": "Create Journal Entry. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_payment",
+      "workflow_visible": true,
+      "title": "Create Payment",
+      "description": "Create Payment. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_payment_method",
+      "workflow_visible": true,
+      "title": "Create Payment Method",
+      "description": "Create Payment Method. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_purchase",
+      "workflow_visible": true,
+      "title": "Create Purchase",
+      "description": "Create Purchase. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_purchase_order",
+      "workflow_visible": true,
+      "title": "Create Purchase Order",
+      "description": "Create Purchase Order. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_refund_receipt",
+      "workflow_visible": true,
+      "title": "Create Refund Receipt",
+      "description": "Create Refund Receipt. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_sales_receipt",
+      "workflow_visible": true,
+      "title": "Create Sales Receipt",
+      "description": "Create Sales Receipt. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_term",
+      "workflow_visible": true,
+      "title": "Create Term",
+      "description": "Create Term. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_time_activity",
+      "workflow_visible": true,
+      "title": "Create Time Activity",
+      "description": "Create Time Activity. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_transfer",
+      "workflow_visible": true,
+      "title": "Create Transfer",
+      "description": "Create Transfer. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_vendor",
+      "workflow_visible": true,
+      "title": "Create Vendor",
+      "description": "Create Vendor. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "create_vendor_credit",
+      "workflow_visible": true,
+      "title": "Create Vendor Credit",
+      "description": "Create Vendor Credit. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "delete_attachable",
+      "workflow_visible": true,
+      "title": "Delete Attachable",
+      "description": "Delete Attachable. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "delete_bill",
+      "workflow_visible": true,
+      "title": "Delete Bill",
+      "description": "Delete Bill. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "delete_bill_payment",
+      "workflow_visible": true,
+      "title": "Delete Bill Payment",
+      "description": "Delete Bill Payment. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "delete_credit_memo",
+      "workflow_visible": true,
+      "title": "Delete Credit Memo",
+      "description": "Delete Credit Memo. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "delete_customer",
+      "workflow_visible": true,
+      "title": "Delete Customer",
+      "description": "Delete Customer. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "delete_deposit",
+      "workflow_visible": true,
+      "title": "Delete Deposit",
+      "description": "Delete Deposit. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "delete_employee",
+      "workflow_visible": true,
+      "title": "Delete Employee",
+      "description": "Delete Employee. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "delete_estimate",
+      "workflow_visible": true,
+      "title": "Delete Estimate",
+      "description": "Delete Estimate. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "delete_invoice",
+      "workflow_visible": true,
+      "title": "Delete Invoice",
+      "description": "Delete Invoice. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "delete_item",
+      "workflow_visible": true,
+      "title": "Delete Item",
+      "description": "Delete Item. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "delete_journal_entry",
+      "workflow_visible": true,
+      "title": "Delete Journal Entry",
+      "description": "Delete Journal Entry. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "delete_payment",
+      "workflow_visible": true,
+      "title": "Delete Payment",
+      "description": "Delete Payment. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "delete_purchase",
+      "workflow_visible": true,
+      "title": "Delete Purchase",
+      "description": "Delete Purchase. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "delete_purchase_order",
+      "workflow_visible": true,
+      "title": "Delete Purchase Order",
+      "description": "Delete Purchase Order. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "delete_refund_receipt",
+      "workflow_visible": true,
+      "title": "Delete Refund Receipt",
+      "description": "Delete Refund Receipt. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "delete_sales_receipt",
+      "workflow_visible": true,
+      "title": "Delete Sales Receipt",
+      "description": "Delete Sales Receipt. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "delete_time_activity",
+      "workflow_visible": true,
+      "title": "Delete Time Activity",
+      "description": "Delete Time Activity. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "delete_transfer",
+      "workflow_visible": true,
+      "title": "Delete Transfer",
+      "description": "Delete Transfer. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "delete_vendor",
+      "workflow_visible": true,
+      "title": "Delete Vendor",
+      "description": "Delete Vendor. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "delete_vendor_credit",
+      "workflow_visible": true,
+      "title": "Delete Vendor Credit",
+      "description": "Delete Vendor Credit. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "sync_token",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "delete_mode",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_account",
+      "workflow_visible": true,
+      "title": "Get Account",
+      "description": "Get Account. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_aged_payables",
+      "workflow_visible": true,
+      "title": "Get Aged Payables",
+      "description": "Get Aged Payables. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "options",
+          "type": "object",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_aged_receivables",
+      "workflow_visible": true,
+      "title": "Get Aged Receivables",
+      "description": "Get Aged Receivables. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "options",
+          "type": "object",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_aged_receivables_detail",
+      "workflow_visible": true,
+      "title": "Get Aged Receivables Detail",
+      "description": "Get Aged Receivables Detail. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "options",
+          "type": "object",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_attachable",
+      "workflow_visible": true,
+      "title": "Get Attachable",
+      "description": "Get Attachable. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_balance_sheet",
+      "workflow_visible": true,
+      "title": "Get Balance Sheet",
+      "description": "Get Balance Sheet. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "options",
+          "type": "object",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_bill",
+      "workflow_visible": true,
+      "title": "Get Bill",
+      "description": "Get Bill. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_bill_payment",
+      "workflow_visible": true,
+      "title": "Get Bill Payment",
+      "description": "Get Bill Payment. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_cash_flow",
+      "workflow_visible": true,
+      "title": "Get Cash Flow",
+      "description": "Get Cash Flow. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "options",
+          "type": "object",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_class",
+      "workflow_visible": true,
+      "title": "Get Class",
+      "description": "Get Class. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_company_info",
+      "workflow_visible": true,
+      "title": "Get Company Info",
+      "description": "Get Company Info. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_credit_memo",
+      "workflow_visible": true,
+      "title": "Get Credit Memo",
+      "description": "Get Credit Memo. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_customer",
+      "workflow_visible": true,
+      "title": "Get Customer",
+      "description": "Get Customer. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_customer_balance",
+      "workflow_visible": true,
+      "title": "Get Customer Balance",
+      "description": "Get Customer Balance. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "options",
+          "type": "object",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_customer_sales",
+      "workflow_visible": true,
+      "title": "Get Customer Sales",
+      "description": "Get Customer Sales. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "options",
+          "type": "object",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_department",
+      "workflow_visible": true,
+      "title": "Get Department",
+      "description": "Get Department. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_deposit",
+      "workflow_visible": true,
+      "title": "Get Deposit",
+      "description": "Get Deposit. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_employee",
+      "workflow_visible": true,
+      "title": "Get Employee",
+      "description": "Get Employee. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_estimate",
+      "workflow_visible": true,
+      "title": "Get Estimate",
+      "description": "Get Estimate. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_general_ledger",
+      "workflow_visible": true,
+      "title": "Get General Ledger",
+      "description": "Get General Ledger. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "options",
+          "type": "object",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_invoice",
+      "workflow_visible": true,
+      "title": "Get Invoice",
+      "description": "Get Invoice. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_invoice_pdf",
+      "workflow_visible": true,
+      "title": "Get Invoice Pdf",
+      "description": "Get Invoice Pdf. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.pdf_artifact_handle"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_item",
+      "workflow_visible": true,
+      "title": "Get Item",
+      "description": "Get Item. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_journal_entry",
+      "workflow_visible": true,
+      "title": "Get Journal Entry",
+      "description": "Get Journal Entry. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_payment",
+      "workflow_visible": true,
+      "title": "Get Payment",
+      "description": "Get Payment. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_payment_method",
+      "workflow_visible": true,
+      "title": "Get Payment Method",
+      "description": "Get Payment Method. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_preferences",
+      "workflow_visible": true,
+      "title": "Get Preferences",
+      "description": "Get Preferences. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_profit_and_loss",
+      "workflow_visible": true,
+      "title": "Get Profit And Loss",
+      "description": "Get Profit And Loss. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "options",
+          "type": "object",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_purchase",
+      "workflow_visible": true,
+      "title": "Get Purchase",
+      "description": "Get Purchase. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_purchase_order",
+      "workflow_visible": true,
+      "title": "Get Purchase Order",
+      "description": "Get Purchase Order. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_refund_receipt",
+      "workflow_visible": true,
+      "title": "Get Refund Receipt",
+      "description": "Get Refund Receipt. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_sales_receipt",
+      "workflow_visible": true,
+      "title": "Get Sales Receipt",
+      "description": "Get Sales Receipt. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_tax_agency",
+      "workflow_visible": true,
+      "title": "Get Tax Agency",
+      "description": "Get Tax Agency. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_tax_code",
+      "workflow_visible": true,
+      "title": "Get Tax Code",
+      "description": "Get Tax Code. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_tax_rate",
+      "workflow_visible": true,
+      "title": "Get Tax Rate",
+      "description": "Get Tax Rate. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_term",
+      "workflow_visible": true,
+      "title": "Get Term",
+      "description": "Get Term. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_time_activity",
+      "workflow_visible": true,
+      "title": "Get Time Activity",
+      "description": "Get Time Activity. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_transfer",
+      "workflow_visible": true,
+      "title": "Get Transfer",
+      "description": "Get Transfer. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_trial_balance",
+      "workflow_visible": true,
+      "title": "Get Trial Balance",
+      "description": "Get Trial Balance. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "options",
+          "type": "object",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_vendor",
+      "workflow_visible": true,
+      "title": "Get Vendor",
+      "description": "Get Vendor. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_vendor_balance",
+      "workflow_visible": true,
+      "title": "Get Vendor Balance",
+      "description": "Get Vendor Balance. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "options",
+          "type": "object",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_vendor_credit",
+      "workflow_visible": true,
+      "title": "Get Vendor Credit",
+      "description": "Get Vendor Credit. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "get_vendor_expenses",
+      "workflow_visible": true,
+      "title": "Get Vendor Expenses",
+      "description": "Get Vendor Expenses. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "options",
+          "type": "object",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "read_invoice",
+      "workflow_visible": true,
+      "title": "Read Invoice",
+      "description": "Read Invoice. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "read_item",
+      "workflow_visible": true,
+      "title": "Read Item",
+      "description": "Read Item. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_accounts",
+      "workflow_visible": true,
+      "title": "Search Accounts",
+      "description": "Search Accounts. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_attachables",
+      "workflow_visible": true,
+      "title": "Search Attachables",
+      "description": "Search Attachables. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_bill_payments",
+      "workflow_visible": true,
+      "title": "Search Bill Payments",
+      "description": "Search Bill Payments. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_bills",
+      "workflow_visible": true,
+      "title": "Search Bills",
+      "description": "Search Bills. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_budgets",
+      "workflow_visible": true,
+      "title": "Search Budgets",
+      "description": "Search Budgets. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_classes",
+      "workflow_visible": true,
+      "title": "Search Classes",
+      "description": "Search Classes. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_credit_memos",
+      "workflow_visible": true,
+      "title": "Search Credit Memos",
+      "description": "Search Credit Memos. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_customers",
+      "workflow_visible": true,
+      "title": "Search Customers",
+      "description": "Search Customers. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_departments",
+      "workflow_visible": true,
+      "title": "Search Departments",
+      "description": "Search Departments. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_deposits",
+      "workflow_visible": true,
+      "title": "Search Deposits",
+      "description": "Search Deposits. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_employees",
+      "workflow_visible": true,
+      "title": "Search Employees",
+      "description": "Search Employees. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_estimates",
+      "workflow_visible": true,
+      "title": "Search Estimates",
+      "description": "Search Estimates. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_invoices",
+      "workflow_visible": true,
+      "title": "Search Invoices",
+      "description": "Search Invoices. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_items",
+      "workflow_visible": true,
+      "title": "Search Items",
+      "description": "Search Items. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_journal_entries",
+      "workflow_visible": true,
+      "title": "Search Journal Entries",
+      "description": "Search Journal Entries. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_payment_methods",
+      "workflow_visible": true,
+      "title": "Search Payment Methods",
+      "description": "Search Payment Methods. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_payments",
+      "workflow_visible": true,
+      "title": "Search Payments",
+      "description": "Search Payments. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_purchase_orders",
+      "workflow_visible": true,
+      "title": "Search Purchase Orders",
+      "description": "Search Purchase Orders. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_purchases",
+      "workflow_visible": true,
+      "title": "Search Purchases",
+      "description": "Search Purchases. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_refund_receipts",
+      "workflow_visible": true,
+      "title": "Search Refund Receipts",
+      "description": "Search Refund Receipts. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_sales_receipts",
+      "workflow_visible": true,
+      "title": "Search Sales Receipts",
+      "description": "Search Sales Receipts. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_tax_agencies",
+      "workflow_visible": true,
+      "title": "Search Tax Agencies",
+      "description": "Search Tax Agencies. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_tax_codes",
+      "workflow_visible": true,
+      "title": "Search Tax Codes",
+      "description": "Search Tax Codes. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_tax_rates",
+      "workflow_visible": true,
+      "title": "Search Tax Rates",
+      "description": "Search Tax Rates. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_terms",
+      "workflow_visible": true,
+      "title": "Search Terms",
+      "description": "Search Terms. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_time_activities",
+      "workflow_visible": true,
+      "title": "Search Time Activities",
+      "description": "Search Time Activities. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_transfers",
+      "workflow_visible": true,
+      "title": "Search Transfers",
+      "description": "Search Transfers. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_vendor_credits",
+      "workflow_visible": true,
+      "title": "Search Vendor Credits",
+      "description": "Search Vendor Credits. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "search_vendors",
+      "workflow_visible": true,
+      "title": "Search Vendors",
+      "description": "Search Vendors. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "filters",
+          "type": "object",
+          "required": false
+        },
+        {
+          "name": "start_position",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "max_results",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "order_by",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "count",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "result_fields": [
+        "result.data",
+        "result.next_start_position",
+        "result.total_count"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_account",
+      "workflow_visible": true,
+      "title": "Update Account",
+      "description": "Update Account. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_attachable",
+      "workflow_visible": true,
+      "title": "Update Attachable",
+      "description": "Update Attachable. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_bill",
+      "workflow_visible": true,
+      "title": "Update Bill",
+      "description": "Update Bill. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_bill_payment",
+      "workflow_visible": true,
+      "title": "Update Bill Payment",
+      "description": "Update Bill Payment. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_class",
+      "workflow_visible": true,
+      "title": "Update Class",
+      "description": "Update Class. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_company_info",
+      "workflow_visible": true,
+      "title": "Update Company Info",
+      "description": "Update Company Info. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_credit_memo",
+      "workflow_visible": true,
+      "title": "Update Credit Memo",
+      "description": "Update Credit Memo. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_customer",
+      "workflow_visible": true,
+      "title": "Update Customer",
+      "description": "Update Customer. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_department",
+      "workflow_visible": true,
+      "title": "Update Department",
+      "description": "Update Department. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_deposit",
+      "workflow_visible": true,
+      "title": "Update Deposit",
+      "description": "Update Deposit. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_employee",
+      "workflow_visible": true,
+      "title": "Update Employee",
+      "description": "Update Employee. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_estimate",
+      "workflow_visible": true,
+      "title": "Update Estimate",
+      "description": "Update Estimate. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_invoice",
+      "workflow_visible": true,
+      "title": "Update Invoice",
+      "description": "Update Invoice. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_item",
+      "workflow_visible": true,
+      "title": "Update Item",
+      "description": "Update Item. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_journal_entry",
+      "workflow_visible": true,
+      "title": "Update Journal Entry",
+      "description": "Update Journal Entry. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_payment",
+      "workflow_visible": true,
+      "title": "Update Payment",
+      "description": "Update Payment. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_payment_method",
+      "workflow_visible": true,
+      "title": "Update Payment Method",
+      "description": "Update Payment Method. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_purchase",
+      "workflow_visible": true,
+      "title": "Update Purchase",
+      "description": "Update Purchase. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_purchase_order",
+      "workflow_visible": true,
+      "title": "Update Purchase Order",
+      "description": "Update Purchase Order. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_refund_receipt",
+      "workflow_visible": true,
+      "title": "Update Refund Receipt",
+      "description": "Update Refund Receipt. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_sales_receipt",
+      "workflow_visible": true,
+      "title": "Update Sales Receipt",
+      "description": "Update Sales Receipt. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_term",
+      "workflow_visible": true,
+      "title": "Update Term",
+      "description": "Update Term. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_time_activity",
+      "workflow_visible": true,
+      "title": "Update Time Activity",
+      "description": "Update Time Activity. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_transfer",
+      "workflow_visible": true,
+      "title": "Update Transfer",
+      "description": "Update Transfer. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_vendor",
+      "workflow_visible": true,
+      "title": "Update Vendor",
+      "description": "Update Vendor. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "update_vendor_credit",
+      "workflow_visible": true,
+      "title": "Update Vendor Credit",
+      "description": "Update Vendor Credit. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [
+        {
+          "name": "connection_ref",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true
+        }
+      ],
+      "result_fields": [
+        "result.data"
+      ],
+      "error_codes": [
+        "invalid_payload",
+        "invalid_connection",
+        "effect_claim_required",
+        "test_mode_suppressed",
+        "write_disabled",
+        "provider_unavailable",
+        "invalid_provider_response",
+        "response_too_large",
+        "network_blocked",
+        "timeout",
+        "authentication_failed",
+        "not_found",
+        "conflict",
+        "rate_limited",
+        "provider_validation",
+        "artifact_unavailable"
+      ],
+      "mutates_platform": false
+    },
+    {
+      "action_id": "verify_company",
+      "title": "Verify company",
+      "workflow_visible": false,
+      "required_scopes": [
+        "extension:invoke"
+      ],
+      "handler": {
+        "mode": "extension"
+      },
+      "parameters": [],
+      "result_fields": [
+        "result.subject",
+        "result.verified_display_name",
+        "result.safe_metadata",
+        "result.health"
+      ],
+      "mutates_platform": false
+    }
+  ]
+}

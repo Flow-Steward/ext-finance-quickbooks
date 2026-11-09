@@ -1,0 +1,112 @@
+{
+  "schema_version": "extension_descriptor_v1",
+  "extension_id": "flowsteward.quickbooks",
+  "release_version": "1.0.0",
+  "extension_type": "service_extension",
+  "artifacts": {
+    "skills": [
+      {
+        "skill_id": "quickbooks_accounting_workflows",
+        "ref": "artifacts/skills/quickbooks_accounting_workflows.yaml",
+        "publish": true
+      }
+    ]
+  },
+  "identity": {
+    "display_name": "QuickBooks Online",
+    "description": "Native Python QuickBooks Online accounting integration: all tools from the pinned official MCP server, reports and document artifacts.",
+    "tags": [
+      "quickbooks",
+      "accounting"
+    ]
+  },
+  "vendor": {
+    "vendor_name": "Flow Steward"
+  },
+  "listing": {
+    "visibility": "public_reference",
+    "category": "finance"
+  },
+  "distribution": {
+    "channel": "private_byo",
+    "execution_modes": [
+      "local"
+    ],
+    "allows_self_hosted": true,
+    "requires_connected_control_plane": false,
+    "import_sources": [
+      "file"
+    ]
+  },
+  "runtime": {
+    "contract_version": "extension_host_v2",
+    "extension_contract_v2": {
+      "oauth_providers": [
+        {
+          "provider_id": "intuit_oauth",
+          "description": "Authorize one QuickBooks Online company using project-owned Intuit application credentials.",
+          "display_name": "Intuit QuickBooks Online",
+          "setup_page_id": "setup-guide",
+          "help_page_id": "setup-guide",
+          "flow": {
+            "type": "authorization_code",
+            "pkce": "none"
+          },
+          "credential_fields": [
+            {
+              "field_id": "client_id",
+              "value_type": "text",
+              "required": true,
+              "secret": false,
+              "change_policy": "reauthorization_required",
+              "label": "Intuit Client ID",
+              "help_text": "Client ID from the Intuit app for the selected sandbox or production environment.",
+              "validation": {
+                "min_length": 1,
+                "max_length": 512
+              }
+            },
+            {
+              "field_id": "client_secret",
+              "value_type": "secret",
+              "required": true,
+              "secret": true,
+              "change_policy": "reauthorization_required",
+              "label": "Intuit Client Secret",
+              "help_text": "Matching Intuit app client secret; stored and used only by the platform.",
+              "validation": {
+                "min_length": 1,
+                "max_length": 4096
+              }
+            }
+          ],
+          "authorization_endpoint": {
+            "url": "https://appcenter.intuit.com/connect/oauth2"
+          },
+          "token_endpoint": {
+            "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+            "client_auth_method": "client_secret_basic"
+          },
+          "revocation_endpoint": {
+            "url": "https://developer.api.intuit.com/v2/oauth2/tokens/revoke"
+          },
+          "callback_id": "oauth_authorization",
+          "authorization_intents": [
+            {
+              "intent_id": "company_connect",
+              "static_parameters": {}
+            }
+          ],
+          "post_connect_action_id": "verify_company"
+        }
+      ],
+      "connection_types": "contracts/connection_types.yaml",
+      "operation_manifest": "contracts/operation_manifest.yaml",
+      "step_ui_manifest": "contracts/step_ui_manifest.yaml"
+    }
+  },
+  "lifecycle": {
+    "data_schema_version": 1,
+    "data_migrations": []
+  }
+}
