@@ -1,23 +1,21 @@
-# QuickBooks artwork provenance
+# Flow Steward default extension icon
 
-Original official QuickBooks product mark, fetched from the Intuit QuickBooks website.
+This extension uses the existing Flow Steward default icon, copied unchanged
+from the maintained Generic IMAP extension (`Flow-Steward/ext-email-imap`,
+`icon.png`). The File Transfer extension uses the identical image.
 
-- Page: https://quickbooks.intuit.com/
-- Exact asset: https://quickbooks.intuit.com/cas/dam/IMAGE/A7mjJ5rpg/apple-touch-icon-196x196.png
-- The official page identifies this asset in its `rel="icon"`, `sizes="196x196"` link.
-- Packaged as `icon.png` unchanged; no conversion, resizing, recoloring or redrawing.
-- QuickBooks and Intuit are trademarks of Intuit Inc. This independently developed integration is not endorsed by Intuit.
-- Trademark usage policy: https://www.intuit.com/legal/trademark/
-- Artwork inspected against the official source at original and catalog sizes. No catalog publication is part of this deliverable.
+Source: https://github.com/Flow-Steward/ext-email-imap/blob/606c75862e0a97252e9985d8e07b8d87cac7e821/icon.png
 
-Source artwork SHA-256: `fbb9a774485736d868563505d849ce6fb080cf6019bc0161402f3df7f4616095`.
-Final icon.png SHA-256: `fbb9a774485736d868563505d849ce6fb080cf6019bc0161402f3df7f4616095`.
+Source and final SHA-256:
+`e81950a8b57d2ae07b8210045363fd082f537614c09fb8c7df0252f55d2d4bf5`.
 
-The Intuit policy permits descriptive plain-text references without implying
-endorsement, but requires an express written license for product logos/icons.
-Public availability of the source asset does not grant that license. This
-record establishes official origin and visual fidelity; it does not claim
-trademark permission. Verify the applicable Intuit Developer Program/license
-terms before public catalog publication. The Apache code license does not
-license Intuit artwork. Intuit and QuickBooks are registered trademarks of
-Intuit Inc.; this product has not been approved by Intuit.
+No resizing, recoloring, redrawing or other transformation was performed.
+The original and packaged PNG were visually compared. The default icon is
+intentionally used at the repository owner's explicit instruction for release
+1.0.0, overriding the normal official-provider-logo publication requirement.
+It is Flow Steward artwork, not an Intuit or QuickBooks logo. No Intuit artwork
+is distributed in this release.
+
+QuickBooks and Intuit are trademarks of Intuit Inc. This independently developed
+integration is not endorsed by Intuit. Product names identify the integrated
+service only. See https://www.intuit.com/legal/trademark/.
