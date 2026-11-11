@@ -1,4 +1,9 @@
-# QuickBooks Online 1.0.1
+# QuickBooks Online 1.0.2
+
+- Added automatic shared CI for pull requests and pushes to main, with tests and source-based release packaging.
+- Added tag and manual release callers pinned to the shared extension tooling, using this file for the release notes.
+
+## 1.0.1
 
 Clarified the catalog description, supported accounting operations, reports, document handling and company connection setup.
 

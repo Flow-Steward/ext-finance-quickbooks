@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "extension_id": "flowsteward.quickbooks",
+  "runtime_targets": [
+    ""
+  ],
+  "payload_sources": [],
+  "test_requirements": [
+    "requirements-dev.txt"
+  ],
+  "test_paths": [
+    "tests"
+  ],
+  "additional_assets": [
+    "RELEASE_NOTES.md"
+  ],
+  "notes_file": "RELEASE_NOTES.md"
+}

@@ -295,7 +295,7 @@ manifest = {
     "manifest_version": 2,
     "extension_id": "flowsteward.quickbooks",
     "kind": "tool_provider",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "display_name": "QuickBooks Online",
     "description": "Connect a QuickBooks Online company to Flow Steward for accounting record automation, reporting and document handling. Search and read supported entities such as customers, vendors, accounts, items, invoices, bills, payments and purchase orders, then use the corresponding supported create and update operations to move approved business data into QuickBooks. The release provides 145 workflow operations based on a pinned Intuit tool inventory, implemented through native QuickBooks REST requests.\n\nFinancial reporting includes 12 reports covering areas such as profit and loss, balance sheet, cash flow and aged receivables or payables. Reports accept provider options for dates, accounting method and relevant entity filters, and preserve QuickBooks' own report structure and totals. Download invoice PDFs into Flow Steward storage and upload workflow files as QuickBooks attachments, or create attachment metadata without a file.\n\nUse these building blocks to transfer approved invoices, collect balances for follow-up workflows or assemble periodic accounting reports. Searches expose bounded pages and continuation positions. Updates require the current SyncToken to detect conflicting changes, and connection settings can separately disable creates, updates or deletions. Each operation explicitly selects one authorized company and its sandbox or production environment; available entities and behavior depend on the company's plan, region and permissions.",
     "lifecycle": {"data_schema_version": 1, "data_migrations": []},
@@ -376,7 +376,7 @@ dump(
     {
         "schema_version": "extension_descriptor_v1",
         "extension_id": "flowsteward.quickbooks",
-        "release_version": "1.0.1",
+        "release_version": "1.0.2",
         "extension_type": "service_extension",
         "artifacts": {
             "skills": [
