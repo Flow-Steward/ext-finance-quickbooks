@@ -295,15 +295,16 @@ manifest = {
     "manifest_version": 2,
     "extension_id": "flowsteward.quickbooks",
     "kind": "tool_provider",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "display_name": "QuickBooks Online",
-    "description": "Native Python QuickBooks Online accounting integration: all tools from the pinned official MCP server, reports and document artifacts.",
+    "description": "Connect a QuickBooks Online company to Flow Steward for accounting record automation, reporting and document handling. Search and read supported entities such as customers, vendors, accounts, items, invoices, bills, payments and purchase orders, then use the corresponding supported create and update operations to move approved business data into QuickBooks. The release provides 145 workflow operations based on a pinned Intuit tool inventory, implemented through native QuickBooks REST requests.\n\nFinancial reporting includes 12 reports covering areas such as profit and loss, balance sheet, cash flow and aged receivables or payables. Reports accept provider options for dates, accounting method and relevant entity filters, and preserve QuickBooks' own report structure and totals. Download invoice PDFs into Flow Steward storage and upload workflow files as QuickBooks attachments, or create attachment metadata without a file.\n\nUse these building blocks to transfer approved invoices, collect balances for follow-up workflows or assemble periodic accounting reports. Searches expose bounded pages and continuation positions. Updates require the current SyncToken to detect conflicting changes, and connection settings can separately disable creates, updates or deletions. Each operation explicitly selects one authorized company and its sandbox or production environment; available entities and behavior depend on the company's plan, region and permissions.",
     "lifecycle": {"data_schema_version": 1, "data_migrations": []},
     "vendor": {"name": "Flow Steward"},
     "listing": {
         "category": "finance",
         "tags": ["quickbooks", "accounting", "intuit"],
-        "summary": "QuickBooks Online entities, financial reports and attachments.",
+        "summary": "Connect QuickBooks Online customers, invoices, bills, payments and accounting records, with financial reports, invoice PDFs and attachments.",
+        "setup_summary": "Register an Intuit QuickBooks Online Accounting app, add the Flow Steward callback URL and configure its matching client ID and secret. Create a company connection with the explicit realm ID and sandbox or production environment, authorize that same company and verify the connection.",
     },
     "features": ["tool", "action"],
     "required_scopes": ["extension:invoke", "artifact:read", "artifact:write"],
@@ -375,7 +376,7 @@ dump(
     {
         "schema_version": "extension_descriptor_v1",
         "extension_id": "flowsteward.quickbooks",
-        "release_version": "1.0.0",
+        "release_version": "1.0.1",
         "extension_type": "service_extension",
         "artifacts": {
             "skills": [
