@@ -2,6 +2,7 @@
 
 import json
 import pathlib
+import re
 from typing import Any
 
 root = pathlib.Path(__file__).resolve().parents[1]
@@ -100,18 +101,134 @@ for name, o in sorted(ops.items()):
     if kind == "pdf":
         outputs = [{"name": "pdf_artifact_handle", "value_type": "artifact_handle"}]
     result_fields = ["result." + f["name"] for f in outputs]
-    title = name.replace("_", " ").title()
-    desc = (
-        title
-        + ". "
-        + (
-            "Uses native QuickBooks fields in data. Updates require Id and SyncToken. "
-            if write
-            else ""
+    entity_label = re.sub(r"(?<=[a-z])(?=[A-Z])", " ", ent).lower()
+    article = "an" if entity_label[0] in "aeiou" else "a"
+    if kind == "pdf":
+        title = "Download invoice PDF"
+        desc = "Download the invoice identified by its QuickBooks ID as a PDF workflow file. Pass pdf_artifact_handle to a later file step."
+    elif kind == "search":
+        title = "Search " + entity_label + " records"
+        desc = f"Find {entity_label} records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled."
+    elif kind == "report":
+        title = "Read " + entity_label + " report"
+        desc = f"Read the QuickBooks {entity_label} report for the selected company. Set date and report options in JSON; returns the provider's report rows, columns and totals without recalculating them."
+    elif kind in {"get", "read"}:
+        title = "Read " + entity_label
+        desc = (
+            f"Read the selected company's {entity_label} settings."
+            if ent in {"CompanyInfo", "Preferences"}
+            else f"Read one {entity_label} by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data."
         )
-    )
-    if kind == "delete":
-        desc += "Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback."
+    elif kind == "create":
+        title = "Create " + entity_label
+        desc = f"Create {article} {entity_label} in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data."
+        if name == "create_attachable":
+            title = "Create attachment or upload a file"
+            desc = "Create QuickBooks attachment metadata from Data. With Workflow file handle, upload that file and associate it using the supplied AttachableRef metadata; without a file, create metadata only."
+    elif kind == "update":
+        title = "Update " + entity_label
+        desc = f"Update an existing {entity_label} using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data."
+    else:
+        title = (
+            "Make " + entity_label + " inactive"
+            if ent in {"Customer", "Vendor", "Employee", "Item"}
+            else "Delete or void " + entity_label
+            if ent in {"Invoice", "Payment", "SalesReceipt"}
+            else "Delete " + entity_label
+        )
+        desc = (
+            f"Make the {entity_label} inactive using its ID and current SyncToken. Use delete mode; void is not supported for this entity."
+            if ent in {"Customer", "Vendor", "Employee", "Item"}
+            else f"Delete the {entity_label} using its ID and current SyncToken. "
+            + (
+                "Choose void to void it instead; deletion is the default. No automatic fallback is used."
+                if ent in {"Invoice", "Payment", "SalesReceipt"}
+                else "Only delete mode is supported for this entity; void is rejected."
+            )
+        )
+    field_copy = {
+        "entity_id": (
+            "QuickBooks record ID",
+            f"ID of the existing {entity_label}, from a previous search or read in this company.",
+            "123",
+        ),
+        "filters": (
+            "Search filters (JSON)",
+            "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+            '{"Id":"123"}',
+        ),
+        "start_position": (
+            "First result position",
+            "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+            "1",
+        ),
+        "max_results": (
+            "Maximum records per page",
+            "Records per page, 1–1000. Default 100. A short page can indicate the end of results.",
+            "100",
+        ),
+        "order_by": (
+            "Sort field and direction",
+            "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+            "Id ASC",
+        ),
+        "count": (
+            "Count only",
+            "Return the total matching record count instead of record data. Leave sort order empty when enabled.",
+            None,
+        ),
+        "data": (
+            "Data (QuickBooks JSON)",
+            "A nonempty native QuickBooks object. "
+            + (
+                "Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
+                if kind == "update"
+                else "Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
+            ),
+            None,
+        ),
+        "sync_token": (
+            "Current SyncToken",
+            "Current numeric version string from the record's SyncToken, not a workflow run ID. Read the record again if QuickBooks reports a conflict.",
+            "0",
+        ),
+        "delete_mode": (
+            "Deletion mode",
+            "delete is the default. Customer, Vendor, Employee and Item become inactive; void is supported only for Invoice, Payment and SalesReceipt.",
+            "delete",
+        ),
+        "options": (
+            "Report options (JSON)",
+            "QuickBooks report options; dates use YYYY-MM-DD. Supported options depend on this report. Accounting method accepts Cash or Accrual.",
+            None,
+        ),
+        "artifact_handle": (
+            "Workflow file handle",
+            "Optional file handle returned by an earlier workflow step. With a file, Data supplies QuickBooks attachment metadata; leave empty for metadata only.",
+            None,
+        ),
+    }
+    if name == "get_profit_and_loss":
+        field_copy["options"] = (
+            *field_copy["options"][:2],
+            '{"start_date":"2026-01-01","end_date":"2026-01-31","accounting_method":"Accrual"}',
+        )
+    for item in inputs:
+        if item["name"] in field_copy:
+            label, help_text, _ = field_copy[item["name"]]
+            item["display_name"] = label
+            item["schema"]["description"] = help_text
+    if name == "create_attachable":
+        help_text = "Attachment metadata using native QuickBooks fields. For upload, include FileName, a supported ContentType (for example application/pdf) and AttachableRef links; omit Id and SyncToken."
+        field_copy["data"] = ("Data (QuickBooks JSON)", help_text, None)
+        inputs[1]["schema"]["description"] = help_text
+    if name == "create_customer":
+        field_copy["data"] = (*field_copy["data"][:2], '{"DisplayName":"Example customer Ltd"}')
+    if name == "update_customer":
+        field_copy["data"] = (
+            *field_copy["data"][:2],
+            '{"Id":"123","SyncToken":"0","DisplayName":"Updated customer Ltd"}',
+        )
     operations.append(
         {
             "operation_id": name,
@@ -171,6 +288,12 @@ for name, o in sorted(ops.items()):
                     }[f["value_type"]],
                     "label": f["display_name"],
                     "required": f["required"],
+                    "help_text": field_copy[f["name"]][1],
+                    **(
+                        {"placeholder": field_copy[f["name"]][2]}
+                        if field_copy[f["name"]][2] is not None
+                        else {}
+                    ),
                 }
                 for f in inputs
                 if f["name"] != "connection_ref"
@@ -295,7 +418,7 @@ manifest = {
     "manifest_version": 2,
     "extension_id": "flowsteward.quickbooks",
     "kind": "tool_provider",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "display_name": "QuickBooks Online",
     "description": "Connect a QuickBooks Online company to Flow Steward for accounting record automation, reporting and document handling. Search and read supported entities such as customers, vendors, accounts, items, invoices, bills, payments and purchase orders, then use the corresponding supported create and update operations to move approved business data into QuickBooks. The release provides 145 workflow operations based on a pinned Intuit tool inventory, implemented through native QuickBooks REST requests.\n\nFinancial reporting includes 12 reports covering areas such as profit and loss, balance sheet, cash flow and aged receivables or payables. Reports accept provider options for dates, accounting method and relevant entity filters, and preserve QuickBooks' own report structure and totals. Download invoice PDFs into Flow Steward storage and upload workflow files as QuickBooks attachments, or create attachment metadata without a file.\n\nUse these building blocks to transfer approved invoices, collect balances for follow-up workflows or assemble periodic accounting reports. Searches expose bounded pages and continuation positions. Updates require the current SyncToken to detect conflicting changes, and connection settings can separately disable creates, updates or deletions. Each operation explicitly selects one authorized company and its sandbox or production environment; available entities and behavior depend on the company's plan, region and permissions.",
     "lifecycle": {"data_schema_version": 1, "data_migrations": []},
@@ -376,7 +499,7 @@ dump(
     {
         "schema_version": "extension_descriptor_v1",
         "extension_id": "flowsteward.quickbooks",
-        "release_version": "1.0.2",
+        "release_version": "1.0.3",
         "extension_type": "service_extension",
         "artifacts": {
             "skills": [

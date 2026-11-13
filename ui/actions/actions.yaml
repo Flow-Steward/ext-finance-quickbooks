@@ -3,8 +3,8 @@
     {
       "action_id": "create_account",
       "workflow_visible": true,
-      "title": "Create Account",
-      "description": "Create Account. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create account",
+      "description": "Create an account in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -49,8 +49,8 @@
     {
       "action_id": "create_attachable",
       "workflow_visible": true,
-      "title": "Create Attachable",
-      "description": "Create Attachable. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create attachment or upload a file",
+      "description": "Create QuickBooks attachment metadata from Data. With Workflow file handle, upload that file and associate it using the supplied AttachableRef metadata; without a file, create metadata only.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -100,8 +100,8 @@
     {
       "action_id": "create_bill",
       "workflow_visible": true,
-      "title": "Create Bill",
-      "description": "Create Bill. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create bill",
+      "description": "Create a bill in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -146,8 +146,8 @@
     {
       "action_id": "create_bill_payment",
       "workflow_visible": true,
-      "title": "Create Bill Payment",
-      "description": "Create Bill Payment. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create bill payment",
+      "description": "Create a bill payment in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -192,8 +192,8 @@
     {
       "action_id": "create_class",
       "workflow_visible": true,
-      "title": "Create Class",
-      "description": "Create Class. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create class",
+      "description": "Create a class in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -238,8 +238,8 @@
     {
       "action_id": "create_credit_memo",
       "workflow_visible": true,
-      "title": "Create Credit Memo",
-      "description": "Create Credit Memo. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create credit memo",
+      "description": "Create a credit memo in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -284,8 +284,8 @@
     {
       "action_id": "create_customer",
       "workflow_visible": true,
-      "title": "Create Customer",
-      "description": "Create Customer. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create customer",
+      "description": "Create a customer in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -330,8 +330,8 @@
     {
       "action_id": "create_department",
       "workflow_visible": true,
-      "title": "Create Department",
-      "description": "Create Department. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create department",
+      "description": "Create a department in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -376,8 +376,8 @@
     {
       "action_id": "create_deposit",
       "workflow_visible": true,
-      "title": "Create Deposit",
-      "description": "Create Deposit. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create deposit",
+      "description": "Create a deposit in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -422,8 +422,8 @@
     {
       "action_id": "create_employee",
       "workflow_visible": true,
-      "title": "Create Employee",
-      "description": "Create Employee. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create employee",
+      "description": "Create an employee in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -468,8 +468,8 @@
     {
       "action_id": "create_estimate",
       "workflow_visible": true,
-      "title": "Create Estimate",
-      "description": "Create Estimate. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create estimate",
+      "description": "Create an estimate in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -514,8 +514,8 @@
     {
       "action_id": "create_invoice",
       "workflow_visible": true,
-      "title": "Create Invoice",
-      "description": "Create Invoice. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create invoice",
+      "description": "Create an invoice in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -560,8 +560,8 @@
     {
       "action_id": "create_item",
       "workflow_visible": true,
-      "title": "Create Item",
-      "description": "Create Item. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create item",
+      "description": "Create an item in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -606,8 +606,8 @@
     {
       "action_id": "create_journal_entry",
       "workflow_visible": true,
-      "title": "Create Journal Entry",
-      "description": "Create Journal Entry. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create journal entry",
+      "description": "Create a journal entry in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -652,8 +652,8 @@
     {
       "action_id": "create_payment",
       "workflow_visible": true,
-      "title": "Create Payment",
-      "description": "Create Payment. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create payment",
+      "description": "Create a payment in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -698,8 +698,8 @@
     {
       "action_id": "create_payment_method",
       "workflow_visible": true,
-      "title": "Create Payment Method",
-      "description": "Create Payment Method. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create payment method",
+      "description": "Create a payment method in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -744,8 +744,8 @@
     {
       "action_id": "create_purchase",
       "workflow_visible": true,
-      "title": "Create Purchase",
-      "description": "Create Purchase. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create purchase",
+      "description": "Create a purchase in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -790,8 +790,8 @@
     {
       "action_id": "create_purchase_order",
       "workflow_visible": true,
-      "title": "Create Purchase Order",
-      "description": "Create Purchase Order. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create purchase order",
+      "description": "Create a purchase order in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -836,8 +836,8 @@
     {
       "action_id": "create_refund_receipt",
       "workflow_visible": true,
-      "title": "Create Refund Receipt",
-      "description": "Create Refund Receipt. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create refund receipt",
+      "description": "Create a refund receipt in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -882,8 +882,8 @@
     {
       "action_id": "create_sales_receipt",
       "workflow_visible": true,
-      "title": "Create Sales Receipt",
-      "description": "Create Sales Receipt. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create sales receipt",
+      "description": "Create a sales receipt in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -928,8 +928,8 @@
     {
       "action_id": "create_term",
       "workflow_visible": true,
-      "title": "Create Term",
-      "description": "Create Term. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create term",
+      "description": "Create a term in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -974,8 +974,8 @@
     {
       "action_id": "create_time_activity",
       "workflow_visible": true,
-      "title": "Create Time Activity",
-      "description": "Create Time Activity. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create time activity",
+      "description": "Create a time activity in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -1020,8 +1020,8 @@
     {
       "action_id": "create_transfer",
       "workflow_visible": true,
-      "title": "Create Transfer",
-      "description": "Create Transfer. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create transfer",
+      "description": "Create a transfer in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -1066,8 +1066,8 @@
     {
       "action_id": "create_vendor",
       "workflow_visible": true,
-      "title": "Create Vendor",
-      "description": "Create Vendor. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create vendor",
+      "description": "Create a vendor in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -1112,8 +1112,8 @@
     {
       "action_id": "create_vendor_credit",
       "workflow_visible": true,
-      "title": "Create Vendor Credit",
-      "description": "Create Vendor Credit. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Create vendor credit",
+      "description": "Create a vendor credit in the selected company using a native QuickBooks JSON object. Include its required provider fields; omit Id and SyncToken. Returns the saved record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -1158,8 +1158,8 @@
     {
       "action_id": "delete_attachable",
       "workflow_visible": true,
-      "title": "Delete Attachable",
-      "description": "Delete Attachable. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "title": "Delete attachable",
+      "description": "Delete the attachable using its ID and current SyncToken. Only delete mode is supported for this entity; void is rejected.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -1214,8 +1214,8 @@
     {
       "action_id": "delete_bill",
       "workflow_visible": true,
-      "title": "Delete Bill",
-      "description": "Delete Bill. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "title": "Delete bill",
+      "description": "Delete the bill using its ID and current SyncToken. Only delete mode is supported for this entity; void is rejected.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -1270,8 +1270,8 @@
     {
       "action_id": "delete_bill_payment",
       "workflow_visible": true,
-      "title": "Delete Bill Payment",
-      "description": "Delete Bill Payment. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "title": "Delete bill payment",
+      "description": "Delete the bill payment using its ID and current SyncToken. Only delete mode is supported for this entity; void is rejected.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -1326,8 +1326,8 @@
     {
       "action_id": "delete_credit_memo",
       "workflow_visible": true,
-      "title": "Delete Credit Memo",
-      "description": "Delete Credit Memo. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "title": "Delete credit memo",
+      "description": "Delete the credit memo using its ID and current SyncToken. Only delete mode is supported for this entity; void is rejected.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -1382,8 +1382,8 @@
     {
       "action_id": "delete_customer",
       "workflow_visible": true,
-      "title": "Delete Customer",
-      "description": "Delete Customer. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "title": "Make customer inactive",
+      "description": "Make the customer inactive using its ID and current SyncToken. Use delete mode; void is not supported for this entity.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -1438,8 +1438,8 @@
     {
       "action_id": "delete_deposit",
       "workflow_visible": true,
-      "title": "Delete Deposit",
-      "description": "Delete Deposit. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "title": "Delete deposit",
+      "description": "Delete the deposit using its ID and current SyncToken. Only delete mode is supported for this entity; void is rejected.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -1494,8 +1494,8 @@
     {
       "action_id": "delete_employee",
       "workflow_visible": true,
-      "title": "Delete Employee",
-      "description": "Delete Employee. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "title": "Make employee inactive",
+      "description": "Make the employee inactive using its ID and current SyncToken. Use delete mode; void is not supported for this entity.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -1550,8 +1550,8 @@
     {
       "action_id": "delete_estimate",
       "workflow_visible": true,
-      "title": "Delete Estimate",
-      "description": "Delete Estimate. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "title": "Delete estimate",
+      "description": "Delete the estimate using its ID and current SyncToken. Only delete mode is supported for this entity; void is rejected.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -1606,8 +1606,8 @@
     {
       "action_id": "delete_invoice",
       "workflow_visible": true,
-      "title": "Delete Invoice",
-      "description": "Delete Invoice. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "title": "Delete or void invoice",
+      "description": "Delete the invoice using its ID and current SyncToken. Choose void to void it instead; deletion is the default. No automatic fallback is used.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -1662,8 +1662,8 @@
     {
       "action_id": "delete_item",
       "workflow_visible": true,
-      "title": "Delete Item",
-      "description": "Delete Item. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "title": "Make item inactive",
+      "description": "Make the item inactive using its ID and current SyncToken. Use delete mode; void is not supported for this entity.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -1718,8 +1718,8 @@
     {
       "action_id": "delete_journal_entry",
       "workflow_visible": true,
-      "title": "Delete Journal Entry",
-      "description": "Delete Journal Entry. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "title": "Delete journal entry",
+      "description": "Delete the journal entry using its ID and current SyncToken. Only delete mode is supported for this entity; void is rejected.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -1774,8 +1774,8 @@
     {
       "action_id": "delete_payment",
       "workflow_visible": true,
-      "title": "Delete Payment",
-      "description": "Delete Payment. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "title": "Delete or void payment",
+      "description": "Delete the payment using its ID and current SyncToken. Choose void to void it instead; deletion is the default. No automatic fallback is used.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -1830,8 +1830,8 @@
     {
       "action_id": "delete_purchase",
       "workflow_visible": true,
-      "title": "Delete Purchase",
-      "description": "Delete Purchase. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "title": "Delete purchase",
+      "description": "Delete the purchase using its ID and current SyncToken. Only delete mode is supported for this entity; void is rejected.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -1886,8 +1886,8 @@
     {
       "action_id": "delete_purchase_order",
       "workflow_visible": true,
-      "title": "Delete Purchase Order",
-      "description": "Delete Purchase Order. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "title": "Delete purchase order",
+      "description": "Delete the purchase order using its ID and current SyncToken. Only delete mode is supported for this entity; void is rejected.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -1942,8 +1942,8 @@
     {
       "action_id": "delete_refund_receipt",
       "workflow_visible": true,
-      "title": "Delete Refund Receipt",
-      "description": "Delete Refund Receipt. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "title": "Delete refund receipt",
+      "description": "Delete the refund receipt using its ID and current SyncToken. Only delete mode is supported for this entity; void is rejected.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -1998,8 +1998,8 @@
     {
       "action_id": "delete_sales_receipt",
       "workflow_visible": true,
-      "title": "Delete Sales Receipt",
-      "description": "Delete Sales Receipt. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "title": "Delete or void sales receipt",
+      "description": "Delete the sales receipt using its ID and current SyncToken. Choose void to void it instead; deletion is the default. No automatic fallback is used.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -2054,8 +2054,8 @@
     {
       "action_id": "delete_time_activity",
       "workflow_visible": true,
-      "title": "Delete Time Activity",
-      "description": "Delete Time Activity. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "title": "Delete time activity",
+      "description": "Delete the time activity using its ID and current SyncToken. Only delete mode is supported for this entity; void is rejected.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -2110,8 +2110,8 @@
     {
       "action_id": "delete_transfer",
       "workflow_visible": true,
-      "title": "Delete Transfer",
-      "description": "Delete Transfer. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "title": "Delete transfer",
+      "description": "Delete the transfer using its ID and current SyncToken. Only delete mode is supported for this entity; void is rejected.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -2166,8 +2166,8 @@
     {
       "action_id": "delete_vendor",
       "workflow_visible": true,
-      "title": "Delete Vendor",
-      "description": "Delete Vendor. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "title": "Make vendor inactive",
+      "description": "Make the vendor inactive using its ID and current SyncToken. Use delete mode; void is not supported for this entity.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -2222,8 +2222,8 @@
     {
       "action_id": "delete_vendor_credit",
       "workflow_visible": true,
-      "title": "Delete Vendor Credit",
-      "description": "Delete Vendor Credit. Uses native QuickBooks fields in data. Updates require Id and SyncToken. Customer, Vendor, Employee and Item are made inactive. Transaction deletion and voiding are explicit; no fallback.",
+      "title": "Delete vendor credit",
+      "description": "Delete the vendor credit using its ID and current SyncToken. Only delete mode is supported for this entity; void is rejected.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -2278,8 +2278,8 @@
     {
       "action_id": "get_account",
       "workflow_visible": true,
-      "title": "Get Account",
-      "description": "Get Account. ",
+      "title": "Read account",
+      "description": "Read one account by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -2324,8 +2324,8 @@
     {
       "action_id": "get_aged_payables",
       "workflow_visible": true,
-      "title": "Get Aged Payables",
-      "description": "Get Aged Payables. ",
+      "title": "Read aged payables report",
+      "description": "Read the QuickBooks aged payables report for the selected company. Set date and report options in JSON; returns the provider's report rows, columns and totals without recalculating them.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -2370,8 +2370,8 @@
     {
       "action_id": "get_aged_receivables",
       "workflow_visible": true,
-      "title": "Get Aged Receivables",
-      "description": "Get Aged Receivables. ",
+      "title": "Read aged receivables report",
+      "description": "Read the QuickBooks aged receivables report for the selected company. Set date and report options in JSON; returns the provider's report rows, columns and totals without recalculating them.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -2416,8 +2416,8 @@
     {
       "action_id": "get_aged_receivables_detail",
       "workflow_visible": true,
-      "title": "Get Aged Receivables Detail",
-      "description": "Get Aged Receivables Detail. ",
+      "title": "Read aged receivable detail report",
+      "description": "Read the QuickBooks aged receivable detail report for the selected company. Set date and report options in JSON; returns the provider's report rows, columns and totals without recalculating them.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -2462,8 +2462,8 @@
     {
       "action_id": "get_attachable",
       "workflow_visible": true,
-      "title": "Get Attachable",
-      "description": "Get Attachable. ",
+      "title": "Read attachable",
+      "description": "Read one attachable by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -2508,8 +2508,8 @@
     {
       "action_id": "get_balance_sheet",
       "workflow_visible": true,
-      "title": "Get Balance Sheet",
-      "description": "Get Balance Sheet. ",
+      "title": "Read balance sheet report",
+      "description": "Read the QuickBooks balance sheet report for the selected company. Set date and report options in JSON; returns the provider's report rows, columns and totals without recalculating them.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -2554,8 +2554,8 @@
     {
       "action_id": "get_bill",
       "workflow_visible": true,
-      "title": "Get Bill",
-      "description": "Get Bill. ",
+      "title": "Read bill",
+      "description": "Read one bill by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -2600,8 +2600,8 @@
     {
       "action_id": "get_bill_payment",
       "workflow_visible": true,
-      "title": "Get Bill Payment",
-      "description": "Get Bill Payment. ",
+      "title": "Read bill payment",
+      "description": "Read one bill payment by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -2646,8 +2646,8 @@
     {
       "action_id": "get_cash_flow",
       "workflow_visible": true,
-      "title": "Get Cash Flow",
-      "description": "Get Cash Flow. ",
+      "title": "Read cash flow report",
+      "description": "Read the QuickBooks cash flow report for the selected company. Set date and report options in JSON; returns the provider's report rows, columns and totals without recalculating them.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -2692,8 +2692,8 @@
     {
       "action_id": "get_class",
       "workflow_visible": true,
-      "title": "Get Class",
-      "description": "Get Class. ",
+      "title": "Read class",
+      "description": "Read one class by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -2738,8 +2738,8 @@
     {
       "action_id": "get_company_info",
       "workflow_visible": true,
-      "title": "Get Company Info",
-      "description": "Get Company Info. ",
+      "title": "Read company info",
+      "description": "Read the selected company's company info settings.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -2779,8 +2779,8 @@
     {
       "action_id": "get_credit_memo",
       "workflow_visible": true,
-      "title": "Get Credit Memo",
-      "description": "Get Credit Memo. ",
+      "title": "Read credit memo",
+      "description": "Read one credit memo by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -2825,8 +2825,8 @@
     {
       "action_id": "get_customer",
       "workflow_visible": true,
-      "title": "Get Customer",
-      "description": "Get Customer. ",
+      "title": "Read customer",
+      "description": "Read one customer by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -2871,8 +2871,8 @@
     {
       "action_id": "get_customer_balance",
       "workflow_visible": true,
-      "title": "Get Customer Balance",
-      "description": "Get Customer Balance. ",
+      "title": "Read customer balance report",
+      "description": "Read the QuickBooks customer balance report for the selected company. Set date and report options in JSON; returns the provider's report rows, columns and totals without recalculating them.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -2917,8 +2917,8 @@
     {
       "action_id": "get_customer_sales",
       "workflow_visible": true,
-      "title": "Get Customer Sales",
-      "description": "Get Customer Sales. ",
+      "title": "Read customer sales report",
+      "description": "Read the QuickBooks customer sales report for the selected company. Set date and report options in JSON; returns the provider's report rows, columns and totals without recalculating them.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -2963,8 +2963,8 @@
     {
       "action_id": "get_department",
       "workflow_visible": true,
-      "title": "Get Department",
-      "description": "Get Department. ",
+      "title": "Read department",
+      "description": "Read one department by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -3009,8 +3009,8 @@
     {
       "action_id": "get_deposit",
       "workflow_visible": true,
-      "title": "Get Deposit",
-      "description": "Get Deposit. ",
+      "title": "Read deposit",
+      "description": "Read one deposit by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -3055,8 +3055,8 @@
     {
       "action_id": "get_employee",
       "workflow_visible": true,
-      "title": "Get Employee",
-      "description": "Get Employee. ",
+      "title": "Read employee",
+      "description": "Read one employee by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -3101,8 +3101,8 @@
     {
       "action_id": "get_estimate",
       "workflow_visible": true,
-      "title": "Get Estimate",
-      "description": "Get Estimate. ",
+      "title": "Read estimate",
+      "description": "Read one estimate by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -3147,8 +3147,8 @@
     {
       "action_id": "get_general_ledger",
       "workflow_visible": true,
-      "title": "Get General Ledger",
-      "description": "Get General Ledger. ",
+      "title": "Read general ledger report",
+      "description": "Read the QuickBooks general ledger report for the selected company. Set date and report options in JSON; returns the provider's report rows, columns and totals without recalculating them.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -3193,8 +3193,8 @@
     {
       "action_id": "get_invoice",
       "workflow_visible": true,
-      "title": "Get Invoice",
-      "description": "Get Invoice. ",
+      "title": "Read invoice",
+      "description": "Read one invoice by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -3239,8 +3239,8 @@
     {
       "action_id": "get_invoice_pdf",
       "workflow_visible": true,
-      "title": "Get Invoice Pdf",
-      "description": "Get Invoice Pdf. ",
+      "title": "Download invoice PDF",
+      "description": "Download the invoice identified by its QuickBooks ID as a PDF workflow file. Pass pdf_artifact_handle to a later file step.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -3285,8 +3285,8 @@
     {
       "action_id": "get_item",
       "workflow_visible": true,
-      "title": "Get Item",
-      "description": "Get Item. ",
+      "title": "Read item",
+      "description": "Read one item by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -3331,8 +3331,8 @@
     {
       "action_id": "get_journal_entry",
       "workflow_visible": true,
-      "title": "Get Journal Entry",
-      "description": "Get Journal Entry. ",
+      "title": "Read journal entry",
+      "description": "Read one journal entry by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -3377,8 +3377,8 @@
     {
       "action_id": "get_payment",
       "workflow_visible": true,
-      "title": "Get Payment",
-      "description": "Get Payment. ",
+      "title": "Read payment",
+      "description": "Read one payment by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -3423,8 +3423,8 @@
     {
       "action_id": "get_payment_method",
       "workflow_visible": true,
-      "title": "Get Payment Method",
-      "description": "Get Payment Method. ",
+      "title": "Read payment method",
+      "description": "Read one payment method by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -3469,8 +3469,8 @@
     {
       "action_id": "get_preferences",
       "workflow_visible": true,
-      "title": "Get Preferences",
-      "description": "Get Preferences. ",
+      "title": "Read preferences",
+      "description": "Read the selected company's preferences settings.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -3510,8 +3510,8 @@
     {
       "action_id": "get_profit_and_loss",
       "workflow_visible": true,
-      "title": "Get Profit And Loss",
-      "description": "Get Profit And Loss. ",
+      "title": "Read profit and loss report",
+      "description": "Read the QuickBooks profit and loss report for the selected company. Set date and report options in JSON; returns the provider's report rows, columns and totals without recalculating them.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -3556,8 +3556,8 @@
     {
       "action_id": "get_purchase",
       "workflow_visible": true,
-      "title": "Get Purchase",
-      "description": "Get Purchase. ",
+      "title": "Read purchase",
+      "description": "Read one purchase by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -3602,8 +3602,8 @@
     {
       "action_id": "get_purchase_order",
       "workflow_visible": true,
-      "title": "Get Purchase Order",
-      "description": "Get Purchase Order. ",
+      "title": "Read purchase order",
+      "description": "Read one purchase order by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -3648,8 +3648,8 @@
     {
       "action_id": "get_refund_receipt",
       "workflow_visible": true,
-      "title": "Get Refund Receipt",
-      "description": "Get Refund Receipt. ",
+      "title": "Read refund receipt",
+      "description": "Read one refund receipt by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -3694,8 +3694,8 @@
     {
       "action_id": "get_sales_receipt",
       "workflow_visible": true,
-      "title": "Get Sales Receipt",
-      "description": "Get Sales Receipt. ",
+      "title": "Read sales receipt",
+      "description": "Read one sales receipt by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -3740,8 +3740,8 @@
     {
       "action_id": "get_tax_agency",
       "workflow_visible": true,
-      "title": "Get Tax Agency",
-      "description": "Get Tax Agency. ",
+      "title": "Read tax agency",
+      "description": "Read one tax agency by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -3786,8 +3786,8 @@
     {
       "action_id": "get_tax_code",
       "workflow_visible": true,
-      "title": "Get Tax Code",
-      "description": "Get Tax Code. ",
+      "title": "Read tax code",
+      "description": "Read one tax code by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -3832,8 +3832,8 @@
     {
       "action_id": "get_tax_rate",
       "workflow_visible": true,
-      "title": "Get Tax Rate",
-      "description": "Get Tax Rate. ",
+      "title": "Read tax rate",
+      "description": "Read one tax rate by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -3878,8 +3878,8 @@
     {
       "action_id": "get_term",
       "workflow_visible": true,
-      "title": "Get Term",
-      "description": "Get Term. ",
+      "title": "Read term",
+      "description": "Read one term by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -3924,8 +3924,8 @@
     {
       "action_id": "get_time_activity",
       "workflow_visible": true,
-      "title": "Get Time Activity",
-      "description": "Get Time Activity. ",
+      "title": "Read time activity",
+      "description": "Read one time activity by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -3970,8 +3970,8 @@
     {
       "action_id": "get_transfer",
       "workflow_visible": true,
-      "title": "Get Transfer",
-      "description": "Get Transfer. ",
+      "title": "Read transfer",
+      "description": "Read one transfer by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -4016,8 +4016,8 @@
     {
       "action_id": "get_trial_balance",
       "workflow_visible": true,
-      "title": "Get Trial Balance",
-      "description": "Get Trial Balance. ",
+      "title": "Read trial balance report",
+      "description": "Read the QuickBooks trial balance report for the selected company. Set date and report options in JSON; returns the provider's report rows, columns and totals without recalculating them.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -4062,8 +4062,8 @@
     {
       "action_id": "get_vendor",
       "workflow_visible": true,
-      "title": "Get Vendor",
-      "description": "Get Vendor. ",
+      "title": "Read vendor",
+      "description": "Read one vendor by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -4108,8 +4108,8 @@
     {
       "action_id": "get_vendor_balance",
       "workflow_visible": true,
-      "title": "Get Vendor Balance",
-      "description": "Get Vendor Balance. ",
+      "title": "Read vendor balance report",
+      "description": "Read the QuickBooks vendor balance report for the selected company. Set date and report options in JSON; returns the provider's report rows, columns and totals without recalculating them.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -4154,8 +4154,8 @@
     {
       "action_id": "get_vendor_credit",
       "workflow_visible": true,
-      "title": "Get Vendor Credit",
-      "description": "Get Vendor Credit. ",
+      "title": "Read vendor credit",
+      "description": "Read one vendor credit by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -4200,8 +4200,8 @@
     {
       "action_id": "get_vendor_expenses",
       "workflow_visible": true,
-      "title": "Get Vendor Expenses",
-      "description": "Get Vendor Expenses. ",
+      "title": "Read vendor expenses report",
+      "description": "Read the QuickBooks vendor expenses report for the selected company. Set date and report options in JSON; returns the provider's report rows, columns and totals without recalculating them.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -4246,8 +4246,8 @@
     {
       "action_id": "read_invoice",
       "workflow_visible": true,
-      "title": "Read Invoice",
-      "description": "Read Invoice. ",
+      "title": "Read invoice",
+      "description": "Read one invoice by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -4292,8 +4292,8 @@
     {
       "action_id": "read_item",
       "workflow_visible": true,
-      "title": "Read Item",
-      "description": "Read Item. ",
+      "title": "Read item",
+      "description": "Read one item by its QuickBooks ID in the selected company. Returns native QuickBooks fields in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -4338,8 +4338,8 @@
     {
       "action_id": "search_accounts",
       "workflow_visible": true,
-      "title": "Search Accounts",
-      "description": "Search Accounts. ",
+      "title": "Search account records",
+      "description": "Find account records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -4406,8 +4406,8 @@
     {
       "action_id": "search_attachables",
       "workflow_visible": true,
-      "title": "Search Attachables",
-      "description": "Search Attachables. ",
+      "title": "Search attachable records",
+      "description": "Find attachable records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -4474,8 +4474,8 @@
     {
       "action_id": "search_bill_payments",
       "workflow_visible": true,
-      "title": "Search Bill Payments",
-      "description": "Search Bill Payments. ",
+      "title": "Search bill payment records",
+      "description": "Find bill payment records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -4542,8 +4542,8 @@
     {
       "action_id": "search_bills",
       "workflow_visible": true,
-      "title": "Search Bills",
-      "description": "Search Bills. ",
+      "title": "Search bill records",
+      "description": "Find bill records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -4610,8 +4610,8 @@
     {
       "action_id": "search_budgets",
       "workflow_visible": true,
-      "title": "Search Budgets",
-      "description": "Search Budgets. ",
+      "title": "Search budget records",
+      "description": "Find budget records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -4678,8 +4678,8 @@
     {
       "action_id": "search_classes",
       "workflow_visible": true,
-      "title": "Search Classes",
-      "description": "Search Classes. ",
+      "title": "Search class records",
+      "description": "Find class records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -4746,8 +4746,8 @@
     {
       "action_id": "search_credit_memos",
       "workflow_visible": true,
-      "title": "Search Credit Memos",
-      "description": "Search Credit Memos. ",
+      "title": "Search credit memo records",
+      "description": "Find credit memo records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -4814,8 +4814,8 @@
     {
       "action_id": "search_customers",
       "workflow_visible": true,
-      "title": "Search Customers",
-      "description": "Search Customers. ",
+      "title": "Search customer records",
+      "description": "Find customer records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -4882,8 +4882,8 @@
     {
       "action_id": "search_departments",
       "workflow_visible": true,
-      "title": "Search Departments",
-      "description": "Search Departments. ",
+      "title": "Search department records",
+      "description": "Find department records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -4950,8 +4950,8 @@
     {
       "action_id": "search_deposits",
       "workflow_visible": true,
-      "title": "Search Deposits",
-      "description": "Search Deposits. ",
+      "title": "Search deposit records",
+      "description": "Find deposit records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -5018,8 +5018,8 @@
     {
       "action_id": "search_employees",
       "workflow_visible": true,
-      "title": "Search Employees",
-      "description": "Search Employees. ",
+      "title": "Search employee records",
+      "description": "Find employee records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -5086,8 +5086,8 @@
     {
       "action_id": "search_estimates",
       "workflow_visible": true,
-      "title": "Search Estimates",
-      "description": "Search Estimates. ",
+      "title": "Search estimate records",
+      "description": "Find estimate records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -5154,8 +5154,8 @@
     {
       "action_id": "search_invoices",
       "workflow_visible": true,
-      "title": "Search Invoices",
-      "description": "Search Invoices. ",
+      "title": "Search invoice records",
+      "description": "Find invoice records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -5222,8 +5222,8 @@
     {
       "action_id": "search_items",
       "workflow_visible": true,
-      "title": "Search Items",
-      "description": "Search Items. ",
+      "title": "Search item records",
+      "description": "Find item records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -5290,8 +5290,8 @@
     {
       "action_id": "search_journal_entries",
       "workflow_visible": true,
-      "title": "Search Journal Entries",
-      "description": "Search Journal Entries. ",
+      "title": "Search journal entry records",
+      "description": "Find journal entry records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -5358,8 +5358,8 @@
     {
       "action_id": "search_payment_methods",
       "workflow_visible": true,
-      "title": "Search Payment Methods",
-      "description": "Search Payment Methods. ",
+      "title": "Search payment method records",
+      "description": "Find payment method records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -5426,8 +5426,8 @@
     {
       "action_id": "search_payments",
       "workflow_visible": true,
-      "title": "Search Payments",
-      "description": "Search Payments. ",
+      "title": "Search payment records",
+      "description": "Find payment records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -5494,8 +5494,8 @@
     {
       "action_id": "search_purchase_orders",
       "workflow_visible": true,
-      "title": "Search Purchase Orders",
-      "description": "Search Purchase Orders. ",
+      "title": "Search purchase order records",
+      "description": "Find purchase order records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -5562,8 +5562,8 @@
     {
       "action_id": "search_purchases",
       "workflow_visible": true,
-      "title": "Search Purchases",
-      "description": "Search Purchases. ",
+      "title": "Search purchase records",
+      "description": "Find purchase records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -5630,8 +5630,8 @@
     {
       "action_id": "search_refund_receipts",
       "workflow_visible": true,
-      "title": "Search Refund Receipts",
-      "description": "Search Refund Receipts. ",
+      "title": "Search refund receipt records",
+      "description": "Find refund receipt records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -5698,8 +5698,8 @@
     {
       "action_id": "search_sales_receipts",
       "workflow_visible": true,
-      "title": "Search Sales Receipts",
-      "description": "Search Sales Receipts. ",
+      "title": "Search sales receipt records",
+      "description": "Find sales receipt records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -5766,8 +5766,8 @@
     {
       "action_id": "search_tax_agencies",
       "workflow_visible": true,
-      "title": "Search Tax Agencies",
-      "description": "Search Tax Agencies. ",
+      "title": "Search tax agency records",
+      "description": "Find tax agency records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -5834,8 +5834,8 @@
     {
       "action_id": "search_tax_codes",
       "workflow_visible": true,
-      "title": "Search Tax Codes",
-      "description": "Search Tax Codes. ",
+      "title": "Search tax code records",
+      "description": "Find tax code records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -5902,8 +5902,8 @@
     {
       "action_id": "search_tax_rates",
       "workflow_visible": true,
-      "title": "Search Tax Rates",
-      "description": "Search Tax Rates. ",
+      "title": "Search tax rate records",
+      "description": "Find tax rate records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -5970,8 +5970,8 @@
     {
       "action_id": "search_terms",
       "workflow_visible": true,
-      "title": "Search Terms",
-      "description": "Search Terms. ",
+      "title": "Search term records",
+      "description": "Find term records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -6038,8 +6038,8 @@
     {
       "action_id": "search_time_activities",
       "workflow_visible": true,
-      "title": "Search Time Activities",
-      "description": "Search Time Activities. ",
+      "title": "Search time activity records",
+      "description": "Find time activity records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -6106,8 +6106,8 @@
     {
       "action_id": "search_transfers",
       "workflow_visible": true,
-      "title": "Search Transfers",
-      "description": "Search Transfers. ",
+      "title": "Search transfer records",
+      "description": "Find transfer records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -6174,8 +6174,8 @@
     {
       "action_id": "search_vendor_credits",
       "workflow_visible": true,
-      "title": "Search Vendor Credits",
-      "description": "Search Vendor Credits. ",
+      "title": "Search vendor credit records",
+      "description": "Find vendor credit records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -6242,8 +6242,8 @@
     {
       "action_id": "search_vendors",
       "workflow_visible": true,
-      "title": "Search Vendors",
-      "description": "Search Vendors. ",
+      "title": "Search vendor records",
+      "description": "Find vendor records in the selected company using structured QuickBooks filters. Returns one bounded page and next_start_position, or total_count when Count only is enabled.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -6310,8 +6310,8 @@
     {
       "action_id": "update_account",
       "workflow_visible": true,
-      "title": "Update Account",
-      "description": "Update Account. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update account",
+      "description": "Update an existing account using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -6356,8 +6356,8 @@
     {
       "action_id": "update_attachable",
       "workflow_visible": true,
-      "title": "Update Attachable",
-      "description": "Update Attachable. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update attachable",
+      "description": "Update an existing attachable using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -6402,8 +6402,8 @@
     {
       "action_id": "update_bill",
       "workflow_visible": true,
-      "title": "Update Bill",
-      "description": "Update Bill. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update bill",
+      "description": "Update an existing bill using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -6448,8 +6448,8 @@
     {
       "action_id": "update_bill_payment",
       "workflow_visible": true,
-      "title": "Update Bill Payment",
-      "description": "Update Bill Payment. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update bill payment",
+      "description": "Update an existing bill payment using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -6494,8 +6494,8 @@
     {
       "action_id": "update_class",
       "workflow_visible": true,
-      "title": "Update Class",
-      "description": "Update Class. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update class",
+      "description": "Update an existing class using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -6540,8 +6540,8 @@
     {
       "action_id": "update_company_info",
       "workflow_visible": true,
-      "title": "Update Company Info",
-      "description": "Update Company Info. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update company info",
+      "description": "Update an existing company info using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -6586,8 +6586,8 @@
     {
       "action_id": "update_credit_memo",
       "workflow_visible": true,
-      "title": "Update Credit Memo",
-      "description": "Update Credit Memo. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update credit memo",
+      "description": "Update an existing credit memo using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -6632,8 +6632,8 @@
     {
       "action_id": "update_customer",
       "workflow_visible": true,
-      "title": "Update Customer",
-      "description": "Update Customer. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update customer",
+      "description": "Update an existing customer using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -6678,8 +6678,8 @@
     {
       "action_id": "update_department",
       "workflow_visible": true,
-      "title": "Update Department",
-      "description": "Update Department. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update department",
+      "description": "Update an existing department using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -6724,8 +6724,8 @@
     {
       "action_id": "update_deposit",
       "workflow_visible": true,
-      "title": "Update Deposit",
-      "description": "Update Deposit. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update deposit",
+      "description": "Update an existing deposit using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -6770,8 +6770,8 @@
     {
       "action_id": "update_employee",
       "workflow_visible": true,
-      "title": "Update Employee",
-      "description": "Update Employee. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update employee",
+      "description": "Update an existing employee using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -6816,8 +6816,8 @@
     {
       "action_id": "update_estimate",
       "workflow_visible": true,
-      "title": "Update Estimate",
-      "description": "Update Estimate. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update estimate",
+      "description": "Update an existing estimate using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -6862,8 +6862,8 @@
     {
       "action_id": "update_invoice",
       "workflow_visible": true,
-      "title": "Update Invoice",
-      "description": "Update Invoice. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update invoice",
+      "description": "Update an existing invoice using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -6908,8 +6908,8 @@
     {
       "action_id": "update_item",
       "workflow_visible": true,
-      "title": "Update Item",
-      "description": "Update Item. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update item",
+      "description": "Update an existing item using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -6954,8 +6954,8 @@
     {
       "action_id": "update_journal_entry",
       "workflow_visible": true,
-      "title": "Update Journal Entry",
-      "description": "Update Journal Entry. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update journal entry",
+      "description": "Update an existing journal entry using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -7000,8 +7000,8 @@
     {
       "action_id": "update_payment",
       "workflow_visible": true,
-      "title": "Update Payment",
-      "description": "Update Payment. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update payment",
+      "description": "Update an existing payment using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -7046,8 +7046,8 @@
     {
       "action_id": "update_payment_method",
       "workflow_visible": true,
-      "title": "Update Payment Method",
-      "description": "Update Payment Method. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update payment method",
+      "description": "Update an existing payment method using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -7092,8 +7092,8 @@
     {
       "action_id": "update_purchase",
       "workflow_visible": true,
-      "title": "Update Purchase",
-      "description": "Update Purchase. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update purchase",
+      "description": "Update an existing purchase using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -7138,8 +7138,8 @@
     {
       "action_id": "update_purchase_order",
       "workflow_visible": true,
-      "title": "Update Purchase Order",
-      "description": "Update Purchase Order. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update purchase order",
+      "description": "Update an existing purchase order using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -7184,8 +7184,8 @@
     {
       "action_id": "update_refund_receipt",
       "workflow_visible": true,
-      "title": "Update Refund Receipt",
-      "description": "Update Refund Receipt. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update refund receipt",
+      "description": "Update an existing refund receipt using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -7230,8 +7230,8 @@
     {
       "action_id": "update_sales_receipt",
       "workflow_visible": true,
-      "title": "Update Sales Receipt",
-      "description": "Update Sales Receipt. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update sales receipt",
+      "description": "Update an existing sales receipt using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -7276,8 +7276,8 @@
     {
       "action_id": "update_term",
       "workflow_visible": true,
-      "title": "Update Term",
-      "description": "Update Term. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update term",
+      "description": "Update an existing term using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -7322,8 +7322,8 @@
     {
       "action_id": "update_time_activity",
       "workflow_visible": true,
-      "title": "Update Time Activity",
-      "description": "Update Time Activity. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update time activity",
+      "description": "Update an existing time activity using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -7368,8 +7368,8 @@
     {
       "action_id": "update_transfer",
       "workflow_visible": true,
-      "title": "Update Transfer",
-      "description": "Update Transfer. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update transfer",
+      "description": "Update an existing transfer using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -7414,8 +7414,8 @@
     {
       "action_id": "update_vendor",
       "workflow_visible": true,
-      "title": "Update Vendor",
-      "description": "Update Vendor. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update vendor",
+      "description": "Update an existing vendor using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],
@@ -7460,8 +7460,8 @@
     {
       "action_id": "update_vendor_credit",
       "workflow_visible": true,
-      "title": "Update Vendor Credit",
-      "description": "Update Vendor Credit. Uses native QuickBooks fields in data. Updates require Id and SyncToken. ",
+      "title": "Update vendor credit",
+      "description": "Update an existing vendor credit using its current Id and SyncToken in Data. Omitted fields are preserved by the default sparse update; read the current record before editing it. Returns the updated record in data.",
       "required_scopes": [
         "extension:invoke"
       ],

@@ -1,3 +1,7 @@
+# QuickBooks Online 1.0.3
+
+Clarify workflow action titles, operation-specific field help and examples. Add a practical workflow action guide. Existing operation contracts and runtime behavior are unchanged.
+
 # QuickBooks Online 1.0.2
 
 - Added automatic shared CI for pull requests and pushes to main, with tests and source-based release packaging.

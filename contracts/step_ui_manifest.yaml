@@ -2,2669 +2,3179 @@
   "forms": [
     {
       "operation_id": "create_account",
-      "title": "Create Account",
+      "title": "Create account",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "create_attachable",
-      "title": "Create Attachable",
+      "title": "Create attachment or upload a file",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "Attachment metadata using native QuickBooks fields. For upload, include FileName, a supported ContentType (for example application/pdf) and AttachableRef links; omit Id and SyncToken."
         },
         {
           "name": "artifact_handle",
           "widget_type": "text",
-          "label": "Artifact Handle",
-          "required": false
+          "label": "Workflow file handle",
+          "required": false,
+          "help_text": "Optional file handle returned by an earlier workflow step. With a file, Data supplies QuickBooks attachment metadata; leave empty for metadata only."
         }
       ]
     },
     {
       "operation_id": "create_bill",
-      "title": "Create Bill",
+      "title": "Create bill",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "create_bill_payment",
-      "title": "Create Bill Payment",
+      "title": "Create bill payment",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "create_class",
-      "title": "Create Class",
+      "title": "Create class",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "create_credit_memo",
-      "title": "Create Credit Memo",
+      "title": "Create credit memo",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "create_customer",
-      "title": "Create Customer",
+      "title": "Create customer",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record.",
+          "placeholder": "{\"DisplayName\":\"Example customer Ltd\"}"
         }
       ]
     },
     {
       "operation_id": "create_department",
-      "title": "Create Department",
+      "title": "Create department",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "create_deposit",
-      "title": "Create Deposit",
+      "title": "Create deposit",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "create_employee",
-      "title": "Create Employee",
+      "title": "Create employee",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "create_estimate",
-      "title": "Create Estimate",
+      "title": "Create estimate",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "create_invoice",
-      "title": "Create Invoice",
+      "title": "Create invoice",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "create_item",
-      "title": "Create Item",
+      "title": "Create item",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "create_journal_entry",
-      "title": "Create Journal Entry",
+      "title": "Create journal entry",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "create_payment",
-      "title": "Create Payment",
+      "title": "Create payment",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "create_payment_method",
-      "title": "Create Payment Method",
+      "title": "Create payment method",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "create_purchase",
-      "title": "Create Purchase",
+      "title": "Create purchase",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "create_purchase_order",
-      "title": "Create Purchase Order",
+      "title": "Create purchase order",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "create_refund_receipt",
-      "title": "Create Refund Receipt",
+      "title": "Create refund receipt",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "create_sales_receipt",
-      "title": "Create Sales Receipt",
+      "title": "Create sales receipt",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "create_term",
-      "title": "Create Term",
+      "title": "Create term",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "create_time_activity",
-      "title": "Create Time Activity",
+      "title": "Create time activity",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "create_transfer",
-      "title": "Create Transfer",
+      "title": "Create transfer",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "create_vendor",
-      "title": "Create Vendor",
+      "title": "Create vendor",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "create_vendor_credit",
-      "title": "Create Vendor Credit",
+      "title": "Create vendor credit",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include required fields for this entity. Do not supply Id or SyncToken when creating a record."
         }
       ]
     },
     {
       "operation_id": "delete_attachable",
-      "title": "Delete Attachable",
+      "title": "Delete attachable",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing attachable, from a previous search or read in this company.",
+          "placeholder": "123"
         },
         {
           "name": "sync_token",
           "widget_type": "text",
-          "label": "Sync Token",
-          "required": true
+          "label": "Current SyncToken",
+          "required": true,
+          "help_text": "Current numeric version string from the record's SyncToken, not a workflow run ID. Read the record again if QuickBooks reports a conflict.",
+          "placeholder": "0"
         },
         {
           "name": "delete_mode",
           "widget_type": "text",
-          "label": "Delete Mode",
-          "required": false
+          "label": "Deletion mode",
+          "required": false,
+          "help_text": "delete is the default. Customer, Vendor, Employee and Item become inactive; void is supported only for Invoice, Payment and SalesReceipt.",
+          "placeholder": "delete"
         }
       ]
     },
     {
       "operation_id": "delete_bill",
-      "title": "Delete Bill",
+      "title": "Delete bill",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing bill, from a previous search or read in this company.",
+          "placeholder": "123"
         },
         {
           "name": "sync_token",
           "widget_type": "text",
-          "label": "Sync Token",
-          "required": true
+          "label": "Current SyncToken",
+          "required": true,
+          "help_text": "Current numeric version string from the record's SyncToken, not a workflow run ID. Read the record again if QuickBooks reports a conflict.",
+          "placeholder": "0"
         },
         {
           "name": "delete_mode",
           "widget_type": "text",
-          "label": "Delete Mode",
-          "required": false
+          "label": "Deletion mode",
+          "required": false,
+          "help_text": "delete is the default. Customer, Vendor, Employee and Item become inactive; void is supported only for Invoice, Payment and SalesReceipt.",
+          "placeholder": "delete"
         }
       ]
     },
     {
       "operation_id": "delete_bill_payment",
-      "title": "Delete Bill Payment",
+      "title": "Delete bill payment",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing bill payment, from a previous search or read in this company.",
+          "placeholder": "123"
         },
         {
           "name": "sync_token",
           "widget_type": "text",
-          "label": "Sync Token",
-          "required": true
+          "label": "Current SyncToken",
+          "required": true,
+          "help_text": "Current numeric version string from the record's SyncToken, not a workflow run ID. Read the record again if QuickBooks reports a conflict.",
+          "placeholder": "0"
         },
         {
           "name": "delete_mode",
           "widget_type": "text",
-          "label": "Delete Mode",
-          "required": false
+          "label": "Deletion mode",
+          "required": false,
+          "help_text": "delete is the default. Customer, Vendor, Employee and Item become inactive; void is supported only for Invoice, Payment and SalesReceipt.",
+          "placeholder": "delete"
         }
       ]
     },
     {
       "operation_id": "delete_credit_memo",
-      "title": "Delete Credit Memo",
+      "title": "Delete credit memo",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing credit memo, from a previous search or read in this company.",
+          "placeholder": "123"
         },
         {
           "name": "sync_token",
           "widget_type": "text",
-          "label": "Sync Token",
-          "required": true
+          "label": "Current SyncToken",
+          "required": true,
+          "help_text": "Current numeric version string from the record's SyncToken, not a workflow run ID. Read the record again if QuickBooks reports a conflict.",
+          "placeholder": "0"
         },
         {
           "name": "delete_mode",
           "widget_type": "text",
-          "label": "Delete Mode",
-          "required": false
+          "label": "Deletion mode",
+          "required": false,
+          "help_text": "delete is the default. Customer, Vendor, Employee and Item become inactive; void is supported only for Invoice, Payment and SalesReceipt.",
+          "placeholder": "delete"
         }
       ]
     },
     {
       "operation_id": "delete_customer",
-      "title": "Delete Customer",
+      "title": "Make customer inactive",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing customer, from a previous search or read in this company.",
+          "placeholder": "123"
         },
         {
           "name": "sync_token",
           "widget_type": "text",
-          "label": "Sync Token",
-          "required": true
+          "label": "Current SyncToken",
+          "required": true,
+          "help_text": "Current numeric version string from the record's SyncToken, not a workflow run ID. Read the record again if QuickBooks reports a conflict.",
+          "placeholder": "0"
         },
         {
           "name": "delete_mode",
           "widget_type": "text",
-          "label": "Delete Mode",
-          "required": false
+          "label": "Deletion mode",
+          "required": false,
+          "help_text": "delete is the default. Customer, Vendor, Employee and Item become inactive; void is supported only for Invoice, Payment and SalesReceipt.",
+          "placeholder": "delete"
         }
       ]
     },
     {
       "operation_id": "delete_deposit",
-      "title": "Delete Deposit",
+      "title": "Delete deposit",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing deposit, from a previous search or read in this company.",
+          "placeholder": "123"
         },
         {
           "name": "sync_token",
           "widget_type": "text",
-          "label": "Sync Token",
-          "required": true
+          "label": "Current SyncToken",
+          "required": true,
+          "help_text": "Current numeric version string from the record's SyncToken, not a workflow run ID. Read the record again if QuickBooks reports a conflict.",
+          "placeholder": "0"
         },
         {
           "name": "delete_mode",
           "widget_type": "text",
-          "label": "Delete Mode",
-          "required": false
+          "label": "Deletion mode",
+          "required": false,
+          "help_text": "delete is the default. Customer, Vendor, Employee and Item become inactive; void is supported only for Invoice, Payment and SalesReceipt.",
+          "placeholder": "delete"
         }
       ]
     },
     {
       "operation_id": "delete_employee",
-      "title": "Delete Employee",
+      "title": "Make employee inactive",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing employee, from a previous search or read in this company.",
+          "placeholder": "123"
         },
         {
           "name": "sync_token",
           "widget_type": "text",
-          "label": "Sync Token",
-          "required": true
+          "label": "Current SyncToken",
+          "required": true,
+          "help_text": "Current numeric version string from the record's SyncToken, not a workflow run ID. Read the record again if QuickBooks reports a conflict.",
+          "placeholder": "0"
         },
         {
           "name": "delete_mode",
           "widget_type": "text",
-          "label": "Delete Mode",
-          "required": false
+          "label": "Deletion mode",
+          "required": false,
+          "help_text": "delete is the default. Customer, Vendor, Employee and Item become inactive; void is supported only for Invoice, Payment and SalesReceipt.",
+          "placeholder": "delete"
         }
       ]
     },
     {
       "operation_id": "delete_estimate",
-      "title": "Delete Estimate",
+      "title": "Delete estimate",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing estimate, from a previous search or read in this company.",
+          "placeholder": "123"
         },
         {
           "name": "sync_token",
           "widget_type": "text",
-          "label": "Sync Token",
-          "required": true
+          "label": "Current SyncToken",
+          "required": true,
+          "help_text": "Current numeric version string from the record's SyncToken, not a workflow run ID. Read the record again if QuickBooks reports a conflict.",
+          "placeholder": "0"
         },
         {
           "name": "delete_mode",
           "widget_type": "text",
-          "label": "Delete Mode",
-          "required": false
+          "label": "Deletion mode",
+          "required": false,
+          "help_text": "delete is the default. Customer, Vendor, Employee and Item become inactive; void is supported only for Invoice, Payment and SalesReceipt.",
+          "placeholder": "delete"
         }
       ]
     },
     {
       "operation_id": "delete_invoice",
-      "title": "Delete Invoice",
+      "title": "Delete or void invoice",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing invoice, from a previous search or read in this company.",
+          "placeholder": "123"
         },
         {
           "name": "sync_token",
           "widget_type": "text",
-          "label": "Sync Token",
-          "required": true
+          "label": "Current SyncToken",
+          "required": true,
+          "help_text": "Current numeric version string from the record's SyncToken, not a workflow run ID. Read the record again if QuickBooks reports a conflict.",
+          "placeholder": "0"
         },
         {
           "name": "delete_mode",
           "widget_type": "text",
-          "label": "Delete Mode",
-          "required": false
+          "label": "Deletion mode",
+          "required": false,
+          "help_text": "delete is the default. Customer, Vendor, Employee and Item become inactive; void is supported only for Invoice, Payment and SalesReceipt.",
+          "placeholder": "delete"
         }
       ]
     },
     {
       "operation_id": "delete_item",
-      "title": "Delete Item",
+      "title": "Make item inactive",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing item, from a previous search or read in this company.",
+          "placeholder": "123"
         },
         {
           "name": "sync_token",
           "widget_type": "text",
-          "label": "Sync Token",
-          "required": true
+          "label": "Current SyncToken",
+          "required": true,
+          "help_text": "Current numeric version string from the record's SyncToken, not a workflow run ID. Read the record again if QuickBooks reports a conflict.",
+          "placeholder": "0"
         },
         {
           "name": "delete_mode",
           "widget_type": "text",
-          "label": "Delete Mode",
-          "required": false
+          "label": "Deletion mode",
+          "required": false,
+          "help_text": "delete is the default. Customer, Vendor, Employee and Item become inactive; void is supported only for Invoice, Payment and SalesReceipt.",
+          "placeholder": "delete"
         }
       ]
     },
     {
       "operation_id": "delete_journal_entry",
-      "title": "Delete Journal Entry",
+      "title": "Delete journal entry",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing journal entry, from a previous search or read in this company.",
+          "placeholder": "123"
         },
         {
           "name": "sync_token",
           "widget_type": "text",
-          "label": "Sync Token",
-          "required": true
+          "label": "Current SyncToken",
+          "required": true,
+          "help_text": "Current numeric version string from the record's SyncToken, not a workflow run ID. Read the record again if QuickBooks reports a conflict.",
+          "placeholder": "0"
         },
         {
           "name": "delete_mode",
           "widget_type": "text",
-          "label": "Delete Mode",
-          "required": false
+          "label": "Deletion mode",
+          "required": false,
+          "help_text": "delete is the default. Customer, Vendor, Employee and Item become inactive; void is supported only for Invoice, Payment and SalesReceipt.",
+          "placeholder": "delete"
         }
       ]
     },
     {
       "operation_id": "delete_payment",
-      "title": "Delete Payment",
+      "title": "Delete or void payment",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing payment, from a previous search or read in this company.",
+          "placeholder": "123"
         },
         {
           "name": "sync_token",
           "widget_type": "text",
-          "label": "Sync Token",
-          "required": true
+          "label": "Current SyncToken",
+          "required": true,
+          "help_text": "Current numeric version string from the record's SyncToken, not a workflow run ID. Read the record again if QuickBooks reports a conflict.",
+          "placeholder": "0"
         },
         {
           "name": "delete_mode",
           "widget_type": "text",
-          "label": "Delete Mode",
-          "required": false
+          "label": "Deletion mode",
+          "required": false,
+          "help_text": "delete is the default. Customer, Vendor, Employee and Item become inactive; void is supported only for Invoice, Payment and SalesReceipt.",
+          "placeholder": "delete"
         }
       ]
     },
     {
       "operation_id": "delete_purchase",
-      "title": "Delete Purchase",
+      "title": "Delete purchase",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing purchase, from a previous search or read in this company.",
+          "placeholder": "123"
         },
         {
           "name": "sync_token",
           "widget_type": "text",
-          "label": "Sync Token",
-          "required": true
+          "label": "Current SyncToken",
+          "required": true,
+          "help_text": "Current numeric version string from the record's SyncToken, not a workflow run ID. Read the record again if QuickBooks reports a conflict.",
+          "placeholder": "0"
         },
         {
           "name": "delete_mode",
           "widget_type": "text",
-          "label": "Delete Mode",
-          "required": false
+          "label": "Deletion mode",
+          "required": false,
+          "help_text": "delete is the default. Customer, Vendor, Employee and Item become inactive; void is supported only for Invoice, Payment and SalesReceipt.",
+          "placeholder": "delete"
         }
       ]
     },
     {
       "operation_id": "delete_purchase_order",
-      "title": "Delete Purchase Order",
+      "title": "Delete purchase order",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing purchase order, from a previous search or read in this company.",
+          "placeholder": "123"
         },
         {
           "name": "sync_token",
           "widget_type": "text",
-          "label": "Sync Token",
-          "required": true
+          "label": "Current SyncToken",
+          "required": true,
+          "help_text": "Current numeric version string from the record's SyncToken, not a workflow run ID. Read the record again if QuickBooks reports a conflict.",
+          "placeholder": "0"
         },
         {
           "name": "delete_mode",
           "widget_type": "text",
-          "label": "Delete Mode",
-          "required": false
+          "label": "Deletion mode",
+          "required": false,
+          "help_text": "delete is the default. Customer, Vendor, Employee and Item become inactive; void is supported only for Invoice, Payment and SalesReceipt.",
+          "placeholder": "delete"
         }
       ]
     },
     {
       "operation_id": "delete_refund_receipt",
-      "title": "Delete Refund Receipt",
+      "title": "Delete refund receipt",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing refund receipt, from a previous search or read in this company.",
+          "placeholder": "123"
         },
         {
           "name": "sync_token",
           "widget_type": "text",
-          "label": "Sync Token",
-          "required": true
+          "label": "Current SyncToken",
+          "required": true,
+          "help_text": "Current numeric version string from the record's SyncToken, not a workflow run ID. Read the record again if QuickBooks reports a conflict.",
+          "placeholder": "0"
         },
         {
           "name": "delete_mode",
           "widget_type": "text",
-          "label": "Delete Mode",
-          "required": false
+          "label": "Deletion mode",
+          "required": false,
+          "help_text": "delete is the default. Customer, Vendor, Employee and Item become inactive; void is supported only for Invoice, Payment and SalesReceipt.",
+          "placeholder": "delete"
         }
       ]
     },
     {
       "operation_id": "delete_sales_receipt",
-      "title": "Delete Sales Receipt",
+      "title": "Delete or void sales receipt",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing sales receipt, from a previous search or read in this company.",
+          "placeholder": "123"
         },
         {
           "name": "sync_token",
           "widget_type": "text",
-          "label": "Sync Token",
-          "required": true
+          "label": "Current SyncToken",
+          "required": true,
+          "help_text": "Current numeric version string from the record's SyncToken, not a workflow run ID. Read the record again if QuickBooks reports a conflict.",
+          "placeholder": "0"
         },
         {
           "name": "delete_mode",
           "widget_type": "text",
-          "label": "Delete Mode",
-          "required": false
+          "label": "Deletion mode",
+          "required": false,
+          "help_text": "delete is the default. Customer, Vendor, Employee and Item become inactive; void is supported only for Invoice, Payment and SalesReceipt.",
+          "placeholder": "delete"
         }
       ]
     },
     {
       "operation_id": "delete_time_activity",
-      "title": "Delete Time Activity",
+      "title": "Delete time activity",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing time activity, from a previous search or read in this company.",
+          "placeholder": "123"
         },
         {
           "name": "sync_token",
           "widget_type": "text",
-          "label": "Sync Token",
-          "required": true
+          "label": "Current SyncToken",
+          "required": true,
+          "help_text": "Current numeric version string from the record's SyncToken, not a workflow run ID. Read the record again if QuickBooks reports a conflict.",
+          "placeholder": "0"
         },
         {
           "name": "delete_mode",
           "widget_type": "text",
-          "label": "Delete Mode",
-          "required": false
+          "label": "Deletion mode",
+          "required": false,
+          "help_text": "delete is the default. Customer, Vendor, Employee and Item become inactive; void is supported only for Invoice, Payment and SalesReceipt.",
+          "placeholder": "delete"
         }
       ]
     },
     {
       "operation_id": "delete_transfer",
-      "title": "Delete Transfer",
+      "title": "Delete transfer",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing transfer, from a previous search or read in this company.",
+          "placeholder": "123"
         },
         {
           "name": "sync_token",
           "widget_type": "text",
-          "label": "Sync Token",
-          "required": true
+          "label": "Current SyncToken",
+          "required": true,
+          "help_text": "Current numeric version string from the record's SyncToken, not a workflow run ID. Read the record again if QuickBooks reports a conflict.",
+          "placeholder": "0"
         },
         {
           "name": "delete_mode",
           "widget_type": "text",
-          "label": "Delete Mode",
-          "required": false
+          "label": "Deletion mode",
+          "required": false,
+          "help_text": "delete is the default. Customer, Vendor, Employee and Item become inactive; void is supported only for Invoice, Payment and SalesReceipt.",
+          "placeholder": "delete"
         }
       ]
     },
     {
       "operation_id": "delete_vendor",
-      "title": "Delete Vendor",
+      "title": "Make vendor inactive",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing vendor, from a previous search or read in this company.",
+          "placeholder": "123"
         },
         {
           "name": "sync_token",
           "widget_type": "text",
-          "label": "Sync Token",
-          "required": true
+          "label": "Current SyncToken",
+          "required": true,
+          "help_text": "Current numeric version string from the record's SyncToken, not a workflow run ID. Read the record again if QuickBooks reports a conflict.",
+          "placeholder": "0"
         },
         {
           "name": "delete_mode",
           "widget_type": "text",
-          "label": "Delete Mode",
-          "required": false
+          "label": "Deletion mode",
+          "required": false,
+          "help_text": "delete is the default. Customer, Vendor, Employee and Item become inactive; void is supported only for Invoice, Payment and SalesReceipt.",
+          "placeholder": "delete"
         }
       ]
     },
     {
       "operation_id": "delete_vendor_credit",
-      "title": "Delete Vendor Credit",
+      "title": "Delete vendor credit",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing vendor credit, from a previous search or read in this company.",
+          "placeholder": "123"
         },
         {
           "name": "sync_token",
           "widget_type": "text",
-          "label": "Sync Token",
-          "required": true
+          "label": "Current SyncToken",
+          "required": true,
+          "help_text": "Current numeric version string from the record's SyncToken, not a workflow run ID. Read the record again if QuickBooks reports a conflict.",
+          "placeholder": "0"
         },
         {
           "name": "delete_mode",
           "widget_type": "text",
-          "label": "Delete Mode",
-          "required": false
+          "label": "Deletion mode",
+          "required": false,
+          "help_text": "delete is the default. Customer, Vendor, Employee and Item become inactive; void is supported only for Invoice, Payment and SalesReceipt.",
+          "placeholder": "delete"
         }
       ]
     },
     {
       "operation_id": "get_account",
-      "title": "Get Account",
+      "title": "Read account",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing account, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_aged_payables",
-      "title": "Get Aged Payables",
+      "title": "Read aged payables report",
       "fields": [
         {
           "name": "options",
           "widget_type": "json",
-          "label": "Options",
-          "required": false
+          "label": "Report options (JSON)",
+          "required": false,
+          "help_text": "QuickBooks report options; dates use YYYY-MM-DD. Supported options depend on this report. Accounting method accepts Cash or Accrual."
         }
       ]
     },
     {
       "operation_id": "get_aged_receivables",
-      "title": "Get Aged Receivables",
+      "title": "Read aged receivables report",
       "fields": [
         {
           "name": "options",
           "widget_type": "json",
-          "label": "Options",
-          "required": false
+          "label": "Report options (JSON)",
+          "required": false,
+          "help_text": "QuickBooks report options; dates use YYYY-MM-DD. Supported options depend on this report. Accounting method accepts Cash or Accrual."
         }
       ]
     },
     {
       "operation_id": "get_aged_receivables_detail",
-      "title": "Get Aged Receivables Detail",
+      "title": "Read aged receivable detail report",
       "fields": [
         {
           "name": "options",
           "widget_type": "json",
-          "label": "Options",
-          "required": false
+          "label": "Report options (JSON)",
+          "required": false,
+          "help_text": "QuickBooks report options; dates use YYYY-MM-DD. Supported options depend on this report. Accounting method accepts Cash or Accrual."
         }
       ]
     },
     {
       "operation_id": "get_attachable",
-      "title": "Get Attachable",
+      "title": "Read attachable",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing attachable, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_balance_sheet",
-      "title": "Get Balance Sheet",
+      "title": "Read balance sheet report",
       "fields": [
         {
           "name": "options",
           "widget_type": "json",
-          "label": "Options",
-          "required": false
+          "label": "Report options (JSON)",
+          "required": false,
+          "help_text": "QuickBooks report options; dates use YYYY-MM-DD. Supported options depend on this report. Accounting method accepts Cash or Accrual."
         }
       ]
     },
     {
       "operation_id": "get_bill",
-      "title": "Get Bill",
+      "title": "Read bill",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing bill, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_bill_payment",
-      "title": "Get Bill Payment",
+      "title": "Read bill payment",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing bill payment, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_cash_flow",
-      "title": "Get Cash Flow",
+      "title": "Read cash flow report",
       "fields": [
         {
           "name": "options",
           "widget_type": "json",
-          "label": "Options",
-          "required": false
+          "label": "Report options (JSON)",
+          "required": false,
+          "help_text": "QuickBooks report options; dates use YYYY-MM-DD. Supported options depend on this report. Accounting method accepts Cash or Accrual."
         }
       ]
     },
     {
       "operation_id": "get_class",
-      "title": "Get Class",
+      "title": "Read class",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing class, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_company_info",
-      "title": "Get Company Info",
+      "title": "Read company info",
       "fields": []
     },
     {
       "operation_id": "get_credit_memo",
-      "title": "Get Credit Memo",
+      "title": "Read credit memo",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing credit memo, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_customer",
-      "title": "Get Customer",
+      "title": "Read customer",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing customer, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_customer_balance",
-      "title": "Get Customer Balance",
+      "title": "Read customer balance report",
       "fields": [
         {
           "name": "options",
           "widget_type": "json",
-          "label": "Options",
-          "required": false
+          "label": "Report options (JSON)",
+          "required": false,
+          "help_text": "QuickBooks report options; dates use YYYY-MM-DD. Supported options depend on this report. Accounting method accepts Cash or Accrual."
         }
       ]
     },
     {
       "operation_id": "get_customer_sales",
-      "title": "Get Customer Sales",
+      "title": "Read customer sales report",
       "fields": [
         {
           "name": "options",
           "widget_type": "json",
-          "label": "Options",
-          "required": false
+          "label": "Report options (JSON)",
+          "required": false,
+          "help_text": "QuickBooks report options; dates use YYYY-MM-DD. Supported options depend on this report. Accounting method accepts Cash or Accrual."
         }
       ]
     },
     {
       "operation_id": "get_department",
-      "title": "Get Department",
+      "title": "Read department",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing department, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_deposit",
-      "title": "Get Deposit",
+      "title": "Read deposit",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing deposit, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_employee",
-      "title": "Get Employee",
+      "title": "Read employee",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing employee, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_estimate",
-      "title": "Get Estimate",
+      "title": "Read estimate",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing estimate, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_general_ledger",
-      "title": "Get General Ledger",
+      "title": "Read general ledger report",
       "fields": [
         {
           "name": "options",
           "widget_type": "json",
-          "label": "Options",
-          "required": false
+          "label": "Report options (JSON)",
+          "required": false,
+          "help_text": "QuickBooks report options; dates use YYYY-MM-DD. Supported options depend on this report. Accounting method accepts Cash or Accrual."
         }
       ]
     },
     {
       "operation_id": "get_invoice",
-      "title": "Get Invoice",
+      "title": "Read invoice",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing invoice, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_invoice_pdf",
-      "title": "Get Invoice Pdf",
+      "title": "Download invoice PDF",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing invoice, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_item",
-      "title": "Get Item",
+      "title": "Read item",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing item, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_journal_entry",
-      "title": "Get Journal Entry",
+      "title": "Read journal entry",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing journal entry, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_payment",
-      "title": "Get Payment",
+      "title": "Read payment",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing payment, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_payment_method",
-      "title": "Get Payment Method",
+      "title": "Read payment method",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing payment method, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_preferences",
-      "title": "Get Preferences",
+      "title": "Read preferences",
       "fields": []
     },
     {
       "operation_id": "get_profit_and_loss",
-      "title": "Get Profit And Loss",
+      "title": "Read profit and loss report",
       "fields": [
         {
           "name": "options",
           "widget_type": "json",
-          "label": "Options",
-          "required": false
+          "label": "Report options (JSON)",
+          "required": false,
+          "help_text": "QuickBooks report options; dates use YYYY-MM-DD. Supported options depend on this report. Accounting method accepts Cash or Accrual.",
+          "placeholder": "{\"start_date\":\"2026-01-01\",\"end_date\":\"2026-01-31\",\"accounting_method\":\"Accrual\"}"
         }
       ]
     },
     {
       "operation_id": "get_purchase",
-      "title": "Get Purchase",
+      "title": "Read purchase",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing purchase, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_purchase_order",
-      "title": "Get Purchase Order",
+      "title": "Read purchase order",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing purchase order, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_refund_receipt",
-      "title": "Get Refund Receipt",
+      "title": "Read refund receipt",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing refund receipt, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_sales_receipt",
-      "title": "Get Sales Receipt",
+      "title": "Read sales receipt",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing sales receipt, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_tax_agency",
-      "title": "Get Tax Agency",
+      "title": "Read tax agency",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing tax agency, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_tax_code",
-      "title": "Get Tax Code",
+      "title": "Read tax code",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing tax code, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_tax_rate",
-      "title": "Get Tax Rate",
+      "title": "Read tax rate",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing tax rate, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_term",
-      "title": "Get Term",
+      "title": "Read term",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing term, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_time_activity",
-      "title": "Get Time Activity",
+      "title": "Read time activity",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing time activity, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_transfer",
-      "title": "Get Transfer",
+      "title": "Read transfer",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing transfer, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_trial_balance",
-      "title": "Get Trial Balance",
+      "title": "Read trial balance report",
       "fields": [
         {
           "name": "options",
           "widget_type": "json",
-          "label": "Options",
-          "required": false
+          "label": "Report options (JSON)",
+          "required": false,
+          "help_text": "QuickBooks report options; dates use YYYY-MM-DD. Supported options depend on this report. Accounting method accepts Cash or Accrual."
         }
       ]
     },
     {
       "operation_id": "get_vendor",
-      "title": "Get Vendor",
+      "title": "Read vendor",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing vendor, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_vendor_balance",
-      "title": "Get Vendor Balance",
+      "title": "Read vendor balance report",
       "fields": [
         {
           "name": "options",
           "widget_type": "json",
-          "label": "Options",
-          "required": false
+          "label": "Report options (JSON)",
+          "required": false,
+          "help_text": "QuickBooks report options; dates use YYYY-MM-DD. Supported options depend on this report. Accounting method accepts Cash or Accrual."
         }
       ]
     },
     {
       "operation_id": "get_vendor_credit",
-      "title": "Get Vendor Credit",
+      "title": "Read vendor credit",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing vendor credit, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "get_vendor_expenses",
-      "title": "Get Vendor Expenses",
+      "title": "Read vendor expenses report",
       "fields": [
         {
           "name": "options",
           "widget_type": "json",
-          "label": "Options",
-          "required": false
+          "label": "Report options (JSON)",
+          "required": false,
+          "help_text": "QuickBooks report options; dates use YYYY-MM-DD. Supported options depend on this report. Accounting method accepts Cash or Accrual."
         }
       ]
     },
     {
       "operation_id": "read_invoice",
-      "title": "Read Invoice",
+      "title": "Read invoice",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing invoice, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "read_item",
-      "title": "Read Item",
+      "title": "Read item",
       "fields": [
         {
           "name": "entity_id",
           "widget_type": "text",
-          "label": "Entity Id",
-          "required": true
+          "label": "QuickBooks record ID",
+          "required": true,
+          "help_text": "ID of the existing item, from a previous search or read in this company.",
+          "placeholder": "123"
         }
       ]
     },
     {
       "operation_id": "search_accounts",
-      "title": "Search Accounts",
+      "title": "Search account records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_attachables",
-      "title": "Search Attachables",
+      "title": "Search attachable records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_bill_payments",
-      "title": "Search Bill Payments",
+      "title": "Search bill payment records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_bills",
-      "title": "Search Bills",
+      "title": "Search bill records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_budgets",
-      "title": "Search Budgets",
+      "title": "Search budget records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_classes",
-      "title": "Search Classes",
+      "title": "Search class records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_credit_memos",
-      "title": "Search Credit Memos",
+      "title": "Search credit memo records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_customers",
-      "title": "Search Customers",
+      "title": "Search customer records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_departments",
-      "title": "Search Departments",
+      "title": "Search department records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_deposits",
-      "title": "Search Deposits",
+      "title": "Search deposit records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_employees",
-      "title": "Search Employees",
+      "title": "Search employee records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_estimates",
-      "title": "Search Estimates",
+      "title": "Search estimate records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_invoices",
-      "title": "Search Invoices",
+      "title": "Search invoice records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_items",
-      "title": "Search Items",
+      "title": "Search item records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_journal_entries",
-      "title": "Search Journal Entries",
+      "title": "Search journal entry records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_payment_methods",
-      "title": "Search Payment Methods",
+      "title": "Search payment method records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_payments",
-      "title": "Search Payments",
+      "title": "Search payment records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_purchase_orders",
-      "title": "Search Purchase Orders",
+      "title": "Search purchase order records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_purchases",
-      "title": "Search Purchases",
+      "title": "Search purchase records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_refund_receipts",
-      "title": "Search Refund Receipts",
+      "title": "Search refund receipt records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_sales_receipts",
-      "title": "Search Sales Receipts",
+      "title": "Search sales receipt records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_tax_agencies",
-      "title": "Search Tax Agencies",
+      "title": "Search tax agency records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_tax_codes",
-      "title": "Search Tax Codes",
+      "title": "Search tax code records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_tax_rates",
-      "title": "Search Tax Rates",
+      "title": "Search tax rate records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_terms",
-      "title": "Search Terms",
+      "title": "Search term records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_time_activities",
-      "title": "Search Time Activities",
+      "title": "Search time activity records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_transfers",
-      "title": "Search Transfers",
+      "title": "Search transfer records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_vendor_credits",
-      "title": "Search Vendor Credits",
+      "title": "Search vendor credit records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "search_vendors",
-      "title": "Search Vendors",
+      "title": "Search vendor records",
       "fields": [
         {
           "name": "filters",
           "widget_type": "json",
-          "label": "Filters",
-          "required": false
+          "label": "Search filters (JSON)",
+          "required": false,
+          "help_text": "QuickBooks filterable fields as a JSON object, or conditions with field, operator and value. Conditions are joined with AND; provider field support varies by entity.",
+          "placeholder": "{\"Id\":\"123\"}"
         },
         {
           "name": "start_position",
           "widget_type": "integer",
-          "label": "Start Position",
-          "required": false
+          "label": "First result position",
+          "required": false,
+          "help_text": "First record to read, counted from 1. Default 1; pass next_start_position from the previous page to continue.",
+          "placeholder": "1"
         },
         {
           "name": "max_results",
           "widget_type": "integer",
-          "label": "Max Results",
-          "required": false
+          "label": "Maximum records per page",
+          "required": false,
+          "help_text": "Records per page, 1\u20131000. Default 100. A short page can indicate the end of results.",
+          "placeholder": "100"
         },
         {
           "name": "order_by",
           "widget_type": "text",
-          "label": "Order By",
-          "required": false
+          "label": "Sort field and direction",
+          "required": false,
+          "help_text": "One QuickBooks sortable field, optionally followed by ASC or DESC. Leave empty for a count query.",
+          "placeholder": "Id ASC"
         },
         {
           "name": "count",
           "widget_type": "boolean",
-          "label": "Count",
-          "required": false
+          "label": "Count only",
+          "required": false,
+          "help_text": "Return the total matching record count instead of record data. Leave sort order empty when enabled."
         }
       ]
     },
     {
       "operation_id": "update_account",
-      "title": "Update Account",
+      "title": "Update account",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_attachable",
-      "title": "Update Attachable",
+      "title": "Update attachable",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_bill",
-      "title": "Update Bill",
+      "title": "Update bill",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_bill_payment",
-      "title": "Update Bill Payment",
+      "title": "Update bill payment",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_class",
-      "title": "Update Class",
+      "title": "Update class",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_company_info",
-      "title": "Update Company Info",
+      "title": "Update company info",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_credit_memo",
-      "title": "Update Credit Memo",
+      "title": "Update credit memo",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_customer",
-      "title": "Update Customer",
+      "title": "Update customer",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved.",
+          "placeholder": "{\"Id\":\"123\",\"SyncToken\":\"0\",\"DisplayName\":\"Updated customer Ltd\"}"
         }
       ]
     },
     {
       "operation_id": "update_department",
-      "title": "Update Department",
+      "title": "Update department",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_deposit",
-      "title": "Update Deposit",
+      "title": "Update deposit",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_employee",
-      "title": "Update Employee",
+      "title": "Update employee",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_estimate",
-      "title": "Update Estimate",
+      "title": "Update estimate",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_invoice",
-      "title": "Update Invoice",
+      "title": "Update invoice",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_item",
-      "title": "Update Item",
+      "title": "Update item",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_journal_entry",
-      "title": "Update Journal Entry",
+      "title": "Update journal entry",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_payment",
-      "title": "Update Payment",
+      "title": "Update payment",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_payment_method",
-      "title": "Update Payment Method",
+      "title": "Update payment method",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_purchase",
-      "title": "Update Purchase",
+      "title": "Update purchase",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_purchase_order",
-      "title": "Update Purchase Order",
+      "title": "Update purchase order",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_refund_receipt",
-      "title": "Update Refund Receipt",
+      "title": "Update refund receipt",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_sales_receipt",
-      "title": "Update Sales Receipt",
+      "title": "Update sales receipt",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_term",
-      "title": "Update Term",
+      "title": "Update term",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_time_activity",
-      "title": "Update Time Activity",
+      "title": "Update time activity",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_transfer",
-      "title": "Update Transfer",
+      "title": "Update transfer",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_vendor",
-      "title": "Update Vendor",
+      "title": "Update vendor",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     },
     {
       "operation_id": "update_vendor_credit",
-      "title": "Update Vendor Credit",
+      "title": "Update vendor credit",
       "fields": [
         {
           "name": "data",
           "widget_type": "json",
-          "label": "Data",
-          "required": true
+          "label": "Data (QuickBooks JSON)",
+          "required": true,
+          "help_text": "A nonempty native QuickBooks object. Include the current Id and SyncToken; sparse defaults to true, so omitted fields are preserved."
         }
       ]
     }

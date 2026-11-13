@@ -1,5 +1,8 @@
 # QuickBooks Online for Flow Steward
 
+See the [workflow action guide](docs/workflow-actions.md) for company setup, search,
+updates, reports, files and deletion behavior.
+
 Connect a QuickBooks Online company to Flow Steward for accounting record automation, reporting and document handling. Search and read supported entities such as customers, vendors, accounts, items, invoices, bills, payments and purchase orders, then use the corresponding supported create and update operations to move approved business data into QuickBooks. The release provides 145 workflow operations based on a pinned Intuit tool inventory, implemented through native QuickBooks REST requests.
 
 Financial reporting includes 12 reports covering areas such as profit and loss, balance sheet, cash flow and aged receivables or payables. Reports accept provider options for dates, accounting method and relevant entity filters, and preserve QuickBooks' own report structure and totals. Download invoice PDFs into Flow Steward storage and upload workflow files as QuickBooks attachments, or create attachment metadata without a file.
@@ -126,7 +129,7 @@ benchmarking features are outside the official Accounting MCP reference scope.
 To export with the current public CLI, pass the release version explicitly:
 
 ```sh
-./flow-steward extensions bundle flowsteward.quickbooks --root extensions --extension-version 1.0.2 --output-dir dist/extensions --non-interactive --confirm
+./flow-steward extensions bundle flowsteward.quickbooks --root extensions --extension-version 1.0.3 --output-dir dist/extensions --non-interactive --confirm
 ```
 
 This exports a package; installation and catalog publication are separate operations.
@@ -153,14 +156,14 @@ the verified Flow Steward extension SDK wheel before the development requirement
 After the release changes are merged, create a new tag matching `extension.yaml`:
 
 ```sh
-git tag v1.0.2
-git push origin v1.0.2
+git tag v1.0.3
+git push origin v1.0.3
 ```
 
 To run the same release pipeline manually for that immutable tag:
 
 ```sh
-gh workflow run release.yml --ref main -f tag=v1.0.2
+gh workflow run release.yml --ref main -f tag=v1.0.3
 ```
 
 The release caller builds, tests and packages the tagged source through the shared
