@@ -1,3 +1,8 @@
+# QuickBooks Online 1.0.4
+
+- Added a Support tab with links for reporting a problem, asking a question or requesting a feature in this extension's GitHub repository, and what to include in a report.
+- Added the issue tracker as the extension's support link.
+
 # QuickBooks Online 1.0.3
 
 Clarify workflow action titles, operation-specific field help and examples. Add a practical workflow action guide. Existing operation contracts and runtime behavior are unchanged.
