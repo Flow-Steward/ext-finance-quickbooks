@@ -19,3 +19,6 @@ is distributed in this release.
 QuickBooks and Intuit are trademarks of Intuit Inc. This independently developed
 integration is not endorsed by Intuit. Product names identify the integrated
 service only. See https://www.intuit.com/legal/trademark/.
+
+The release owner approved the Flow Steward icon for version 1.0.5 as a
+release-specific exception to the provider artwork requirement.
