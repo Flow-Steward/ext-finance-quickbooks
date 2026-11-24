@@ -1,3 +1,7 @@
+# QuickBooks Online 1.0.5
+
+- Update development PyYAML to 6.0.4.
+
 # QuickBooks Online 1.0.4
 
 - Added a Support tab with links for reporting a problem, asking a question or requesting a feature in this extension's GitHub repository, and what to include in a report.
